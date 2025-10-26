@@ -1,26 +1,468 @@
-@import "tailwindcss";
+/* CSS Imports removed temporarily to fix parsing issue */
 
+/* CSS Custom Properties */
 :root {
+  --honda-red: #cc0000;
+  --honda-red-dark: #b30000;
+  --honda-orange: #ff8c00;
+  --honda-orange-dark: #e67e00;
+  --honda-blue: #0066cc;
+  --honda-gray: #2c3e50;
+  --honda-gray-light: #ecf0f1;
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background-light: #f8f9fa;
+  --foreground: #2c3e50;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 12px 40px rgba(0, 0, 0, 0.25);
+  --border-radius: 12px;
+  --border-radius-lg: 16px;
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Honda Brand Colors - Professional Edition */
+.bg-honda-red {
+  background: linear-gradient(135deg, #dc143c 0%, #b91c1c 100%) !important;
+  box-shadow: var(--shadow-md);
+}
+
+.honda-red {
+  color: #dc143c !important;
+  font-weight: 600;
+}
+
+.bg-honda-orange {
+  background: linear-gradient(135deg, #ff8c00 0%, #ea580c 100%) !important;
+  box-shadow: var(--shadow-md);
+}
+
+.honda-orange {
+  color: #ff8c00 !important;
+  font-weight: 600;
+}
+
+.text-honda-red {
+  color: #dc143c !important;
+  font-weight: 600;
+}
+
+.text-honda-orange {
+  color: #ff8c00 !important;
+  font-weight: 600;
+}
+
+/* Combined gradient for Honda + Guanzon - Enhanced */
+.bg-honda-gradient {
+  background: linear-gradient(135deg, #dc143c 0%, #ff8c00 50%, #ea580c 100%) !important;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-honda-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+  pointer-events: none;
+}
+
+.bg-guanzon-gradient {
+  background: linear-gradient(135deg, #ff8c00 0%, #ff6347 50%, #dc143c 100%) !important;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Button Enhancements */
+.btn-honda {
+  background: linear-gradient(135deg, #dc143c 0%, #ff8c00 100%);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-honda:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+  color: white;
+}
+
+.btn-honda:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-md);
+}
+
+/* Modal Animations */
+.modal.show {
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: translateY(-50px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Enhanced color selection in modal */
+.color-selection-modal {
+  transition: all 0.3s ease;
+}
+
+.color-selection-modal:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Modal backdrop blur effect */
+.modal-backdrop-blur {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Marquee Section - Enhanced */
+.marquee {
+  background: linear-gradient(90deg, #fff5f0 0%, #ffe4b5 50%, #fff5f0 100%);
+  border-top: 4px solid #dc143c;
+  border-bottom: 4px solid #ff8c00;
+  padding: 1rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.marquee::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.5) 100%);
+  pointer-events: none;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 40s linear infinite;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: var(--font-poppins), sans-serif;
+  color: #2c3e50;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Professional Utility Classes */
+.shadow-soft {
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.shadow-medium {
+  box-shadow: var(--shadow-md) !important;
+}
+
+.shadow-strong {
+  box-shadow: var(--shadow-lg) !important;
+}
+
+.rounded-modern {
+  border-radius: var(--border-radius) !important;
+}
+
+.rounded-modern-lg {
+  border-radius: var(--border-radius-lg) !important;
+}
+
+.text-professional {
+  color: var(--foreground) !important;
+  font-weight: 500;
+}
+
+.bg-professional {
+  background: white !important;
+  box-shadow: var(--shadow-sm);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #dc143c 0%, #ff8c00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+/* Hover Effects */
+.hover-honda-orange:hover {
+  color: #ff8c00 !important;
+  transition: color 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
+}
+
+/* Enhanced Card Hover for Motorcycles */
+.motorcycle-card:hover img {
+  transform: scale(1.05);
+}
+
+.motorcycle-card:hover .price-tag {
+  transform: scale(1.05);
+}
+
+.motorcycle-card:hover .category-badge {
+  transform: scale(1.05);
+}
+
+/* Smooth Transitions for Interactive Elements */
+.btn, .form-control, .card, .badge {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Loading States */
+.loading-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, rgba(255,255,255,0) 37%, #f0f0f0 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 100% 50%; }
+  100% { background-position: -100% 50%; }
+}
+
+/* Professional Focus States */
+.form-control:focus {
+  border-color: #ff8c00;
+  box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.25);
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 20, 60, 0.25);
+}
+
+/* Custom Card Styles - Professional Edition */
+.motorcycle-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  background: white;
+  position: relative;
+}
+
+.motorcycle-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #dc143c 0%, #ff8c00 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.motorcycle-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-xl);
+}
+
+.motorcycle-card:hover::before {
+  opacity: 1;
+}
+
+.color-option {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.color-option::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.color-option:hover {
+  transform: scale(1.15);
+  box-shadow: var(--shadow-lg);
+}
+
+.color-option:hover::before {
+  opacity: 1;
+}
+
+.color-option.active {
+  border-color: #dc143c;
+  transform: scale(1.2);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.3), var(--shadow-lg);
+}
+
+.price-tag {
+  background: linear-gradient(135deg, #dc143c 0%, #ff8c00 100%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-family: var(--font-poppins), sans-serif;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.price-tag::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+}
+
+.category-badge {
+  background: linear-gradient(135deg, #0066cc 0%, #004d99 100%);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: var(--font-poppins), sans-serif;
+  box-shadow: var(--shadow-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Header Section - Premium Design */
+.header-section {
+  background: linear-gradient(135deg, #dc143c 0%, #ff8c00 50%, #ea580c 100%);
+  color: white;
+  padding: 2rem 0;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.header-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+  pointer-events: none;
+}
+
+.header-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.3) 100%);
+}
+
+.logo-section {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.honda-logo {
+  font-size: 4rem;
+  font-weight: 800;
+  font-family: var(--font-poppins), sans-serif;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  letter-spacing: 8px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.branch-name {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-top: 10px;
+  font-weight: 500;
+  font-family: var(--font-inter), sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .honda-logo {
+    font-size: 2rem;
+  }
+  
+  .branch-name {
+    font-size: 1.2rem;
+  }
+  
+  .marquee-content {
+    font-size: 1rem;
+  }
 }
