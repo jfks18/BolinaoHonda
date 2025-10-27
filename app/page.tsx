@@ -52,9 +52,7 @@ const MotorcycleCard = memo(({
               objectFit: 'cover',
               transition: 'transform 0.4s ease'
             }}
-            onError={(e) => {
-              (e.target as HTMLImageElement).src = `https://via.placeholder.com/400x280/dc143c/ffffff?text=${encodeURIComponent(motorcycle.name)}`;
-            }}
+
           />
           <div className="position-absolute top-0 start-0 m-3">
             <span className="category-badge">
