@@ -24,56 +24,303 @@ export interface Motorcycle {
 }
 
 export const motorcycles: Motorcycle[] = [
+  // SCOOTERS - Updated with Honda Philippines Official Data (2024)
   {
-    id: '1',
-    name: 'Honda PCX 160',
+    id: 'click-125',
+    name: 'Honda Click 125',
     category: 'Scooter',
-    price: 120000,
-    image: 'https://via.placeholder.com/300x200/FF6B35/ffffff?text=PCX+160',
+    price: 81900,
+    image: 'https://via.placeholder.com/300x200/0d6efd/ffffff?text=Click+125',
     specs: {
-      engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '156.9cc',
-      power: '15.8 HP @ 8,500 rpm',
-      torque: '15 Nm @ 6,500 rpm',
-      transmission: 'Automatic CVT',
-      fuelCapacity: '8.1 L',
-      weight: '132 kg',
-      seatHeight: '764 mm'
-    },
-    colors: [
-      { name: 'Candy Energy Orange', code: '#FF6B35', image: 'https://via.placeholder.com/300x200/FF6B35/ffffff?text=PCX+160+Orange' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://via.placeholder.com/300x200/FFFFFF/000000?text=PCX+160+White' },
-      { name: 'Matte Axis Gray Metallic', code: '#424242', image: 'https://via.placeholder.com/300x200/424242/ffffff?text=PCX+160+Gray' }
-    ],
-    features: ['Smart Key System', 'All LED Lighting', 'USB Charging Port', 'Digital Instrument Panel'],
-    available: true
-  },
-  {
-    id: '2',
-    name: 'Honda Click 160i',
-    category: 'Scooter',
-    price: 95000,
-    image: 'https://via.placeholder.com/300x200/1E88E5/ffffff?text=Click+160i',
-    specs: {
-      engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '156.9cc',
-      power: '15.8 HP @ 8,500 rpm',
-      torque: '15 Nm @ 6,500 rpm',
-      transmission: 'Automatic CVT',
+      engine: '4-Stroke, 2-Valve, SOHC, Liquid-Cooled, eSP',
+      displacement: '125cc',
+      power: '8.2 kW @ 8,500 rpm',
+      torque: '10.8 Nm @ 5,000 rpm',
+      transmission: 'V-Matic (CVT)',
       fuelCapacity: '5.5 L',
-      weight: '116 kg',
-      seatHeight: '776 mm'
+      weight: '112 kg',
+      seatHeight: '769 mm'
     },
     colors: [
-      { name: 'Candy Tahitian Blue', code: '#1E88E5', image: '/images/click160-blue.jpg' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: '/images/click160-white.jpg' },
-      { name: 'Matte Axis Gray Metallic', code: '#424242', image: '/images/click160-gray.jpg' }
+      { name: 'Pearl Arctic White', code: '#f8f9fa', image: '/images/click125-white.jpg' },
+      { name: 'Pearl Sylvestris Gray', code: '#6c757d', image: '/images/click125-gray.jpg' },
+      { name: 'Stellar Blue Metallic', code: '#0d6efd', image: '/images/click125-blue.jpg' },
+      { name: 'Obsidian Black Metallic', code: '#212529', image: '/images/click125-black.jpg' }
     ],
-    features: ['eSP+ Engine', 'All LED Lighting', 'Digital Instrument Panel', 'Under Seat Storage'],
+    features: ['125CC Liquid-Cooled PGM-Fi eSP Engine', 'New Two-Tone Color Combination', 'Wide Tubeless Tires', 'USB Charging Port'],
     available: true
   },
   {
-    id: '3',
+    id: 'click-125-se',
+    name: 'Honda Click 125 Special Edition',
+    category: 'Scooter',
+    price: 84900,
+    image: 'https://via.placeholder.com/300x200/dc3545/ffffff?text=Click+125+SE',
+    specs: {
+      engine: '4-Stroke, 2-Valve, SOHC, Liquid-Cooled, eSP',
+      displacement: '125cc',
+      power: '8.2 kW @ 8,500 rpm',
+      torque: '10.8 Nm @ 5,000 rpm',
+      transmission: 'V-Matic (CVT)',
+      fuelCapacity: '5.5 L',
+      weight: '112 kg',
+      seatHeight: '769 mm'
+    },
+    colors: [
+      { name: 'Obsidian Black Metallic', code: '#212529', image: '/images/click125se-black.jpg' },
+      { name: 'Pearl Arctic White', code: '#f8f9fa', image: '/images/click125se-white.jpg' },
+      { name: 'Pearl Crimson Red', code: '#dc3545', image: '/images/click125se-red.jpg' }
+    ],
+    features: ['3D Special Edition Emblem', 'Premium Two-Tone Design', 'Enhanced eSP Engine', 'USB Charging Port'],
+    available: true
+  },
+  {
+    id: 'beat-playful',
+    name: 'Honda BeAT Playful',
+    category: 'Scooter',
+    price: 72400,
+    image: 'https://via.placeholder.com/300x200/fd7e14/ffffff?text=BeAT+Playful',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '109.51cc',
+      power: '6.6 kW @ 7,500 rpm',
+      torque: '8.9 Nm @ 5,500 rpm',
+      transmission: 'V-Matic (CVT)',
+      fuelCapacity: '4.2 L',
+      weight: '90 kg',
+      seatHeight: '740 mm'
+    },
+    colors: [
+      { name: 'Candy Energy Orange', code: '#fd7e14', image: '/images/beat-playful-orange.jpg' },
+      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: '/images/beat-playful-white.jpg' },
+      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: '/images/beat-playful-gray.jpg' },
+      { name: 'Candy Tahitian Blue', code: '#0dcaf0', image: '/images/beat-playful-blue.jpg' }
+    ],
+    features: ['Enhanced Smart Power (eSP)', 'Playful Design Elements', 'Fuel Injection System', 'LED Position Light'],
+    available: true
+  },
+  {
+    id: 'beat-premium',
+    name: 'Honda BeAT Premium',
+    category: 'Scooter',
+    price: 74400,
+    image: 'https://via.placeholder.com/300x200/f8f9fa/000000?text=BeAT+Premium',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '109.51cc',
+      power: '6.6 kW @ 7,500 rpm',
+      torque: '8.9 Nm @ 5,500 rpm',
+      transmission: 'V-Matic (CVT)',
+      fuelCapacity: '4.2 L',
+      weight: '90 kg',
+      seatHeight: '740 mm'
+    },
+    colors: [
+      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: '/images/beat-premium-white.jpg' },
+      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: '/images/beat-premium-gray.jpg' },
+      { name: 'Candy Energy Orange', code: '#fd7e14', image: '/images/beat-premium-orange.jpg' }
+    ],
+    features: ['Premium Design Package', 'Enhanced eSP Engine', 'PGM-Fi Fuel Injection', 'Full LED Lighting'],
+    available: true
+  },
+  {
+    id: 'giorno-plus',
+    name: 'Honda Giorno+',
+    category: 'Scooter',
+    price: 101900,
+    image: 'https://via.placeholder.com/300x200/0d6efd/ffffff?text=Giorno+Plus',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '109.51cc',
+      power: '6.6 kW @ 7,500 rpm',
+      torque: '8.9 Nm @ 5,500 rpm',
+      transmission: 'V-Matic (CVT)',
+      fuelCapacity: '4.2 L',
+      weight: '96 kg',
+      seatHeight: '765 mm'
+    },
+    colors: [
+      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: '/images/giorno-white.jpg' },
+      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: '/images/giorno-gray.jpg' },
+      { name: 'Pearl Nightfall Blue', code: '#0d6efd', image: '/images/giorno-blue.jpg' }
+    ],
+    features: ['Retro-Modern Design', 'Enhanced eSP Technology', 'Smart Key System', 'LED Lighting Package'],
+    available: true
+  },
+  {
+    id: 'navi-special',
+    name: 'Honda NAVi (Special Price)',
+    category: 'Scooter',
+    price: 56900,
+    image: 'https://via.placeholder.com/300x200/ffc107/000000?text=NAVi+Special',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC',
+      displacement: '109.51cc',
+      power: '6.0 kW @ 7,000 rpm',
+      torque: '8.8 Nm @ 5,500 rpm',
+      transmission: 'V-Matic (CVT)',
+      fuelCapacity: '3.8 L',
+      weight: '85 kg',
+      seatHeight: '765 mm'
+    },
+    colors: [
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: '/images/navi-yellow.jpg' },
+      { name: 'Patriot Red', code: '#dc3545', image: '/images/navi-red.jpg' },
+      { name: 'Black', code: '#212529', image: '/images/navi-black.jpg' }
+    ],
+    features: ['Adventure-Inspired Design', 'Rugged Styling Elements', 'LED Headlight', 'Special Pricing Offer'],
+    available: true
+  },
+
+  // UNDERBONE MOTORCYCLES - Honda Philippines Official Data
+  {
+    id: 'wave-rsx-drum',
+    name: 'Honda Wave RSX (Drum)',
+    category: 'Commuter',
+    price: 62900,
+    image: 'https://via.placeholder.com/300x200/ffc107/000000?text=Wave+RSX+Drum',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '109.51cc',
+      power: '6.6 kW @ 7,500 rpm',
+      torque: '8.9 Nm @ 5,500 rpm',
+      transmission: 'Rotary 4-Speed',
+      fuelCapacity: '3.7 L',
+      weight: '96 kg',
+      seatHeight: '760 mm'
+    },
+    colors: [
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: '/images/wave-rsx-yellow.jpg' },
+      { name: 'Candy Tahitian Blue', code: '#0dcaf0', image: '/images/wave-rsx-blue.jpg' },
+      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: '/images/wave-rsx-white.jpg' }
+    ],
+    features: ['Enhanced Smart Power (eSP)', 'Fuel Injection System', 'Digital Speedometer', 'LED Position Light'],
+    available: true
+  },
+  {
+    id: 'wave-rsx-disc',
+    name: 'Honda Wave RSX (Disc)',
+    category: 'Commuter',
+    price: 64900,
+    image: 'https://via.placeholder.com/300x200/0dcaf0/ffffff?text=Wave+RSX+Disc',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '109.51cc',
+      power: '6.6 kW @ 7,500 rpm',
+      torque: '8.9 Nm @ 5,500 rpm',
+      transmission: 'Rotary 4-Speed',
+      fuelCapacity: '3.7 L',
+      weight: '98 kg',
+      seatHeight: '760 mm'
+    },
+    colors: [
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: '/images/wave-rsx-disc-yellow.jpg' },
+      { name: 'Candy Tahitian Blue', code: '#0dcaf0', image: '/images/wave-rsx-disc-blue.jpg' },
+      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: '/images/wave-rsx-disc-white.jpg' }
+    ],
+    features: ['Enhanced eSP Technology', 'Front Disc Brake System', 'PGM-Fi Fuel Injection', 'Digital Instrument Cluster'],
+    available: true
+  },
+  {
+    id: 'xrm-125-ds',
+    name: 'Honda XRM 125 DS',
+    category: 'Commuter',
+    price: 71900,
+    image: 'https://via.placeholder.com/300x200/fd7e14/ffffff?text=XRM+125+DS',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '124.89cc',
+      power: '7.5 kW @ 7,500 rpm',
+      torque: '10.3 Nm @ 6,000 rpm',
+      transmission: 'Rotary 4-Speed',
+      fuelCapacity: '5.4 L',
+      weight: '108 kg',
+      seatHeight: '784 mm'
+    },
+    colors: [
+      { name: 'Candy Energy Orange', code: '#fd7e14', image: '/images/xrm125ds-orange.jpg' },
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: '/images/xrm125ds-yellow.jpg' },
+      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: '/images/xrm125ds-gray.jpg' }
+    ],
+    features: ['Dual Sport Design', 'Enhanced eSP Engine', 'PGM-Fi Technology', 'Front Disc Brake'],
+    available: true
+  },
+  {
+    id: 'xrm-125-dsx',
+    name: 'Honda XRM 125 DSX',
+    category: 'Commuter',
+    price: 75400,
+    image: 'https://via.placeholder.com/300x200/fd7e14/ffffff?text=XRM+125+DSX',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '124.89cc',
+      power: '7.5 kW @ 7,500 rpm',
+      torque: '10.3 Nm @ 6,000 rpm',
+      transmission: 'Rotary 4-Speed',
+      fuelCapacity: '5.4 L',
+      weight: '110 kg',
+      seatHeight: '784 mm'
+    },
+    colors: [
+      { name: 'Candy Energy Orange', code: '#fd7e14', image: '/images/xrm125dsx-orange.jpg' },
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: '/images/xrm125dsx-yellow.jpg' },
+      { name: 'Matte Black Metallic', code: '#212529', image: '/images/xrm125dsx-black.jpg' }
+    ],
+    features: ['Premium DSX Package', 'Enhanced eSP Technology', 'Advanced PGM-Fi System', 'Premium Graphics Package'],
+    available: true
+  },
+  {
+    id: 'xrm-125-motard',
+    name: 'Honda XRM 125 Motard',
+    category: 'Commuter',
+    price: 76900,
+    image: 'https://via.placeholder.com/300x200/fd7e14/ffffff?text=XRM+125+Motard',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '124.89cc',
+      power: '7.5 kW @ 7,500 rpm',
+      torque: '10.3 Nm @ 6,000 rpm',
+      transmission: 'Rotary 4-Speed',
+      fuelCapacity: '5.4 L',
+      weight: '112 kg',
+      seatHeight: '790 mm'
+    },
+    colors: [
+      { name: 'Candy Energy Orange', code: '#fd7e14', image: '/images/xrm125motard-orange.jpg' },
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: '/images/xrm125motard-yellow.jpg' },
+      { name: 'Matte Black Metallic', code: '#212529', image: '/images/xrm125motard-black.jpg' }
+    ],
+    features: ['Motard Styling Package', 'Enhanced eSP Engine', 'Front & Rear Disc Brakes', 'Supermoto Design'],
+    available: true
+  },
+  {
+    id: 'rs-125',
+    name: 'Honda RS 125',
+    category: 'Commuter',
+    price: 75900,
+    image: 'https://via.placeholder.com/300x200/fd7e14/ffffff?text=RS+125',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '124.89cc',
+      power: '7.5 kW @ 7,500 rpm',
+      torque: '10.3 Nm @ 6,000 rpm',
+      transmission: 'Rotary 4-Speed',
+      fuelCapacity: '5.0 L',
+      weight: '105 kg',
+      seatHeight: '775 mm'
+    },
+    colors: [
+      { name: 'Candy Energy Orange', code: '#fd7e14', image: '/images/rs125-orange.jpg' },
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: '/images/rs125-yellow.jpg' },
+      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: '/images/rs125-gray.jpg' }
+    ],
+    features: ['Racing-Inspired Design', 'Enhanced eSP Technology', 'PGM-Fi System', 'Front Disc Brake'],
+    available: true
+  },
+
+  // LEGACY MODELS - Updated Pricing
+  {
+    id: 'cbr150r',
     name: 'Honda CBR150R',
     category: 'Sport',
     price: 140000,
@@ -97,7 +344,7 @@ export const motorcycles: Motorcycle[] = [
     available: true
   },
   {
-    id: '4',
+    id: 'adv160',
     name: 'Honda ADV 160',
     category: 'Adventure',
     price: 135000,
@@ -121,267 +368,27 @@ export const motorcycles: Motorcycle[] = [
     available: true
   },
   {
-    id: '5',
-    name: 'Honda Wave 110i',
-    category: 'Commuter',
-    price: 65000,
-    image: 'https://via.placeholder.com/300x200/DC143C/ffffff?text=Wave+110i',
-    specs: {
-      engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '109.51cc',
-      power: '8.8 HP @ 7,500 rpm',
-      torque: '9.0 Nm @ 5,500 rpm',
-      transmission: '4-Speed Semi-Automatic',
-      fuelCapacity: '3.7 L',
-      weight: '96 kg',
-      seatHeight: '767 mm'
-    },
-    colors: [
-      { name: 'Candy Tahitian Blue', code: '#1E88E5', image: '/images/wave110-blue.jpg' },
-      { name: 'Black', code: '#000000', image: '/images/wave110-black.jpg' },
-      { name: 'Red', code: '#DC143C', image: '/images/wave110-red.jpg' }
-    ],
-    features: ['Fuel Efficient', 'Electric Start', 'Tubeless Tires', 'LED Headlight'],
-    available: true
-  },
-  {
-    id: '6',
-    name: 'Honda TMX Supremo 150',
-    category: 'Commuter',
-    price: 88000,
-    image: 'https://via.placeholder.com/300x200/1E88E5/ffffff?text=TMX+Supremo+150',
-    specs: {
-      engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '149.16cc',
-      power: '12.8 HP @ 8,000 rpm',
-      torque: '12.4 Nm @ 6,000 rpm',
-      transmission: '5-Speed Manual',
-      fuelCapacity: '11 L',
-      weight: '118 kg',
-      seatHeight: '789 mm'
-    },
-    colors: [
-      { name: 'Candy Tahitian Blue', code: '#1E88E5', image: '/images/tmx-supremo-150-blue.jpg' },
-      { name: 'Black', code: '#000000', image: '/images/tmx-supremo-150-black.jpg' },
-      { name: 'Red', code: '#DC143C', image: '/images/tmx-supremo-150-red.jpg' }
-    ],
-    features: ['Fuel Efficient', 'Electric Start', 'Digital-Analog Meter', 'Tubeless Tires', 'Enhanced Performance'],
-    available: true
-  },
-  {
-    id: '7',
-    name: 'Honda Click 125 SE',
+    id: 'pcx160',
+    name: 'Honda PCX 160',
     category: 'Scooter',
-    price: 78000,
-    image: 'https://via.placeholder.com/300x200/FF6B35/ffffff?text=Click+125+SE',
+    price: 130000,
+    image: 'https://via.placeholder.com/300x200/FF6B35/ffffff?text=PCX+160',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '124.9cc',
-      power: '11.7 HP @ 8,000 rpm',
-      torque: '10.9 Nm @ 6,000 rpm',
+      displacement: '156.9cc',
+      power: '15.8 HP @ 8,500 rpm',
+      torque: '15 Nm @ 6,500 rpm',
       transmission: 'Automatic CVT',
-      fuelCapacity: '5.5 L',
-      weight: '105 kg',
-      seatHeight: '776 mm'
+      fuelCapacity: '8.1 L',
+      weight: '132 kg',
+      seatHeight: '764 mm'
     },
     colors: [
-      { name: 'Candy Energy Orange', code: '#FF6B35', image: '/images/click125se-orange.jpg' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: '/images/click125se-white.jpg' },
-      { name: 'Matte Axis Gray Metallic', code: '#424242', image: '/images/click125se-gray.jpg' }
+      { name: 'Candy Energy Orange', code: '#FF6B35', image: '/images/pcx160-orange.jpg' },
+      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: '/images/pcx160-white.jpg' },
+      { name: 'Matte Axis Gray Metallic', code: '#424242', image: '/images/pcx160-gray.jpg' }
     ],
-    features: ['eSP Engine', 'LED Headlight', 'Digital Instrument Panel', 'Under Seat Storage', 'Special Edition Design'],
-    available: true
-  },
-  {
-    id: '8',
-    name: 'Honda Click 125 Standard',
-    category: 'Scooter',
-    price: 72000,
-    image: 'https://via.placeholder.com/300x200/1E88E5/ffffff?text=Click+125+Standard',
-    specs: {
-      engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '124.9cc',
-      power: '11.7 HP @ 8,000 rpm',
-      torque: '10.9 Nm @ 6,000 rpm',
-      transmission: 'Automatic CVT',
-      fuelCapacity: '5.5 L',
-      weight: '103 kg',
-      seatHeight: '776 mm'
-    },
-    colors: [
-      { name: 'Candy Tahitian Blue', code: '#1E88E5', image: '/images/click125std-blue.jpg' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: '/images/click125std-white.jpg' },
-      { name: 'Black', code: '#000000', image: '/images/click125std-black.jpg' }
-    ],
-    features: ['eSP Engine', 'LED Headlight', 'Analog Speedometer', 'Under Seat Storage'],
-    available: true
-  },
-  {
-    id: '9',
-    name: 'Honda Beat Premium',
-    category: 'Scooter',
-    price: 65000,
-    image: 'https://via.placeholder.com/300x200/FFFFFF/000000?text=Beat+Premium',
-    specs: {
-      engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '109.51cc',
-      power: '8.8 HP @ 7,500 rpm',
-      torque: '9.0 Nm @ 5,500 rpm',
-      transmission: 'Automatic CVT',
-      fuelCapacity: '4.2 L',
-      weight: '89 kg',
-      seatHeight: '740 mm'
-    },
-    colors: [
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: '/images/beat-premium-white.jpg' },
-      { name: 'Candy Energy Orange', code: '#FF6B35', image: '/images/beat-premium-orange.jpg' },
-      { name: 'Matte Axis Gray Metallic', code: '#424242', image: '/images/beat-premium-gray.jpg' }
-    ],
-    features: ['eSP Engine', 'LED Headlight', 'Digital Speedometer', 'Premium Design', 'Combi Brake System'],
-    available: true
-  },
-  {
-    id: '10',
-    name: 'Honda Beat Playful',
-    category: 'Scooter',
-    price: 58000,
-    image: 'https://via.placeholder.com/300x200/FF69B4/ffffff?text=Beat+Playful',
-    specs: {
-      engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '109.51cc',
-      power: '8.8 HP @ 7,500 rpm',
-      torque: '9.0 Nm @ 5,500 rpm',
-      transmission: 'Automatic CVT',
-      fuelCapacity: '4.2 L',
-      weight: '87 kg',
-      seatHeight: '740 mm'
-    },
-    colors: [
-      { name: 'Playful Pink', code: '#FF69B4', image: '/images/beat-playful-pink.jpg' },
-      { name: 'Vibrant Yellow', code: '#FFD700', image: '/images/beat-playful-yellow.jpg' },
-      { name: 'Candy Energy Orange', code: '#FF6B35', image: '/images/beat-playful-orange.jpg' }
-    ],
-    features: ['eSP Engine', 'LED Headlight', 'Analog Speedometer', 'Playful Colors', 'Lightweight Design'],
-    available: true
-  },
-  {
-    id: '11',
-    name: 'Honda Winner X Premium',
-    category: 'Commuter',
-    price: 95000,
-    image: 'https://via.placeholder.com/300x200/1E88E5/ffffff?text=Winner+X+Premium',
-    specs: {
-      engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '149.16cc',
-      power: '13.2 HP @ 8,000 rpm',
-      torque: '12.8 Nm @ 6,000 rpm',
-      transmission: '5-Speed Manual',
-      fuelCapacity: '4.3 L',
-      weight: '116 kg',
-      seatHeight: '789 mm'
-    },
-    colors: [
-      { name: 'Candy Tahitian Blue', code: '#1E88E5', image: 'https://via.placeholder.com/300x200/1E88E5/ffffff?text=Winner+X+Premium+Blue' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://via.placeholder.com/300x200/FFFFFF/000000?text=Winner+X+Premium+White' },
-      { name: 'Matte Axis Gray Metallic', code: '#424242', image: 'https://via.placeholder.com/300x200/424242/ffffff?text=Winner+X+Premium+Gray' }
-    ],
-    features: ['Smart Key System', 'Full LED Lighting', 'Digital Instrument Panel', 'Premium Design', 'Enhanced Performance'],
-    available: true
-  },
-  {
-    id: '12',
-    name: 'Honda Winner X Standard',
-    category: 'Commuter',
-    price: 88000,
-    image: 'https://via.placeholder.com/300x200/DC143C/ffffff?text=Winner+X+Standard',
-    specs: {
-      engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '149.16cc',
-      power: '13.2 HP @ 8,000 rpm',
-      torque: '12.8 Nm @ 6,000 rpm',
-      transmission: '5-Speed Manual',
-      fuelCapacity: '4.3 L',
-      weight: '114 kg',
-      seatHeight: '789 mm'
-    },
-    colors: [
-      { name: 'Racing Red', code: '#DC143C', image: 'https://via.placeholder.com/300x200/DC143C/ffffff?text=Winner+X+Standard+Red' },
-      { name: 'Black', code: '#000000', image: 'https://via.placeholder.com/300x200/000000/ffffff?text=Winner+X+Standard+Black' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://via.placeholder.com/300x200/FFFFFF/000000?text=Winner+X+Standard+White' }
-    ],
-    features: ['LED Headlight', 'Digital-Analog Meter', 'Electric Start', 'Fuel Efficient', 'Reliable Performance'],
-    available: true
-  },
-  {
-    id: '13',
-    name: 'Honda Winner X Racing',
-    category: 'Sport',
-    price: 105000,
-    image: 'https://via.placeholder.com/300x200/FF0000/ffffff?text=Winner+X+Racing',
-    specs: {
-      engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '149.16cc',
-      power: '13.5 HP @ 8,200 rpm',
-      torque: '13.2 Nm @ 6,200 rpm',
-      transmission: '5-Speed Manual',
-      fuelCapacity: '4.3 L',
-      weight: '118 kg',
-      seatHeight: '789 mm'
-    },
-    colors: [
-      { name: 'Racing Red', code: '#FF0000', image: 'https://via.placeholder.com/300x200/FF0000/ffffff?text=Winner+X+Racing+Red' },
-      { name: 'Matte Black', code: '#1C1C1C', image: 'https://via.placeholder.com/300x200/1C1C1C/ffffff?text=Winner+X+Racing+Black' },
-      { name: 'Racing Blue', code: '#0066FF', image: 'https://via.placeholder.com/300x200/0066FF/ffffff?text=Winner+X+Racing+Blue' }
-    ],
-    features: ['Racing Graphics', 'Sport Suspension', 'Full LED Lighting', 'Digital Instrument Panel', 'Enhanced Power', 'Racing Design'],
-    available: true
-  },
-  {
-    id: '14',
-    name: 'Honda TMX 125 Alpha',
-    category: 'Commuter',
-    price: 78000,
-    image: 'https://via.placeholder.com/300x200/228B22/ffffff?text=TMX+125+Alpha',
-    specs: {
-      engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '124.9cc',
-      power: '11.0 HP @ 8,000 rpm',
-      torque: '10.3 Nm @ 6,000 rpm',
-      transmission: '4-Speed Manual',
-      fuelCapacity: '8.5 L',
-      weight: '108 kg',
-      seatHeight: '789 mm'
-    },
-    colors: [
-      { name: 'Forest Green', code: '#228B22', image: 'https://via.placeholder.com/300x200/228B22/ffffff?text=TMX+125+Alpha+Green' },
-      { name: 'Black', code: '#000000', image: 'https://via.placeholder.com/300x200/000000/ffffff?text=TMX+125+Alpha+Black' },
-      { name: 'Candy Tahitian Blue', code: '#1E88E5', image: 'https://via.placeholder.com/300x200/1E88E5/ffffff?text=TMX+125+Alpha+Blue' }
-    ],
-    features: ['Fuel Efficient', 'Electric Start', 'Analog Speedometer', 'Reliable Engine', 'Affordable Maintenance'],
-    available: true
-  },
-  {
-    id: '15',
-    name: 'Honda Giorno+',
-    category: 'Scooter',
-    price: 62000,
-    image: 'https://via.placeholder.com/300x200/FF1493/ffffff?text=Giorno+Plus',
-    specs: {
-      engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '109.51cc',
-      power: '8.8 HP @ 7,500 rpm',
-      torque: '9.0 Nm @ 5,500 rpm',
-      transmission: 'Automatic CVT',
-      fuelCapacity: '4.2 L',
-      weight: '89 kg',
-      seatHeight: '740 mm'
-    },
-    colors: [
-      { name: 'Deep Pink', code: '#FF1493', image: 'https://via.placeholder.com/300x200/FF1493/ffffff?text=Giorno+Plus+Pink' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://via.placeholder.com/300x200/FFFFFF/000000?text=Giorno+Plus+White' },
-      { name: 'Matte Axis Gray Metallic', code: '#424242', image: 'https://via.placeholder.com/300x200/424242/ffffff?text=Giorno+Plus+Gray' }
-    ],
-    features: ['eSP Engine', 'LED Headlight', 'Digital Speedometer', 'Stylish Design', 'Compact Size', 'Easy Handling'],
+    features: ['Smart Key System', 'All LED Lighting', 'USB Charging Port', 'Digital Instrument Panel'],
     available: true
   }
 ];
