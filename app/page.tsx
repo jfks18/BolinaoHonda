@@ -52,7 +52,7 @@ const MotorcycleCard = memo(({
               objectFit: 'cover',
               transition: 'transform 0.4s ease'
             }}
-
+            
           />
           <div className="position-absolute top-0 start-0 m-3">
             <span className="category-badge">
@@ -561,9 +561,6 @@ export default function Home() {
                           className="w-100 h-100"
                           alt={selectedMotorcycle.name}
                           style={{ objectFit: 'cover' }}
-                          onError={(e) => {
-                            (e.target as HTMLImageElement).src = `https://via.placeholder.com/600x400/cc0000/ffffff?text=${encodeURIComponent(selectedMotorcycle.name)}`;
-                          }}
                         />
                         <div className="position-absolute top-0 start-0 m-3">
                           <span className="badge bg-primary fs-6">{selectedMotorcycle.category}</span>
