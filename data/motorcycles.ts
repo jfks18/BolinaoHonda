@@ -29,7 +29,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda PCX 160',
     category: 'Scooter',
     price: 120000,
-    image: 'https://via.placeholder.com/300x200/FF6B35/ffffff?text=PCX+160',
+  image: 'https://placehold.co/300x200/FF6B35/ffffff?text=PCX+160',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
       displacement: '156.9cc',
@@ -41,9 +41,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '764 mm'
     },
     colors: [
-      { name: 'Candy Energy Orange', code: '#FF6B35', image: 'https://via.placeholder.com/300x200/FF6B35/ffffff?text=PCX+160+Orange' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://via.placeholder.com/300x200/FFFFFF/000000?text=PCX+160+White' },
-      { name: 'Matte Axis Gray Metallic', code: '#424242', image: 'https://via.placeholder.com/300x200/424242/ffffff?text=PCX+160+Gray' }
+  { name: 'Candy Energy Orange', code: '#FF6B35', image: 'https://placehold.co/300x200/FF6B35/ffffff?text=PCX+160+Orange' },
+  { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://placehold.co/300x200/FFFFFF/000000?text=PCX+160+White' },
+  { name: 'Matte Axis Gray Metallic', code: '#424242', image: 'https://placehold.co/300x200/424242/ffffff?text=PCX+160+Gray' }
     ],
     features: ['Smart Key System', 'All LED Lighting', 'USB Charging Port', 'Digital Instrument Panel'],
     available: true
@@ -53,7 +53,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda Click 160i',
     category: 'Scooter',
     price: 95000,
-    image: 'https://via.placeholder.com/300x200/1E88E5/ffffff?text=Click+160i',
+  image: 'https://placehold.co/300x200/1E88E5/ffffff?text=Click+160i',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
       displacement: '156.9cc',
@@ -77,7 +77,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda CBR150R',
     category: 'Sport',
     price: 140000,
-    image: 'https://via.placeholder.com/300x200/DC143C/ffffff?text=CBR150R',
+  image: 'https://placehold.co/300x200/DC143C/ffffff?text=CBR150R',
     specs: {
       engine: '4-Stroke, Single Cylinder, DOHC',
       displacement: '149.16cc',
@@ -101,7 +101,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda ADV 160',
     category: 'Adventure',
     price: 135000,
-    image: 'https://via.placeholder.com/300x200/424242/ffffff?text=ADV+160',
+  image: 'https://placehold.co/300x200/424242/ffffff?text=ADV+160',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
       displacement: '156.9cc',
@@ -125,7 +125,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda Wave 110i',
     category: 'Commuter',
     price: 65000,
-    image: 'https://via.placeholder.com/300x200/DC143C/ffffff?text=Wave+110i',
+  image: 'https://placehold.co/300x200/DC143C/ffffff?text=Wave+110i',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
       displacement: '109.51cc',
@@ -149,7 +149,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda TMX Supremo 150',
     category: 'Commuter',
     price: 88000,
-    image: 'https://via.placeholder.com/300x200/1E88E5/ffffff?text=TMX+Supremo+150',
+  image: 'https://placehold.co/300x200/1E88E5/ffffff?text=TMX+Supremo+150',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
       displacement: '149.16cc',
@@ -173,7 +173,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda Click 125 SE',
     category: 'Scooter',
     price: 78000,
-    image: 'https://via.placeholder.com/300x200/FF6B35/ffffff?text=Click+125+SE',
+  image: 'https://placehold.co/300x200/FF6B35/ffffff?text=Click+125+SE',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
       displacement: '124.9cc',
@@ -197,7 +197,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda Click 125 Standard',
     category: 'Scooter',
     price: 72000,
-    image: 'https://via.placeholder.com/300x200/1E88E5/ffffff?text=Click+125+Standard',
+  image: 'https://placehold.co/300x200/1E88E5/ffffff?text=Click+125+Standard',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
       displacement: '124.9cc',
@@ -221,7 +221,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda Beat Premium',
     category: 'Scooter',
     price: 65000,
-    image: 'https://via.placeholder.com/300x200/FFFFFF/000000?text=Beat+Premium',
+  image: 'https://placehold.co/300x200/FFFFFF/000000?text=Beat+Premium',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
       displacement: '109.51cc',
@@ -245,7 +245,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda Beat Playful',
     category: 'Scooter',
     price: 58000,
-    image: 'https://via.placeholder.com/300x200/FF69B4/ffffff?text=Beat+Playful',
+  image: 'https://placehold.co/300x200/FF69B4/ffffff?text=Beat+Playful',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
       displacement: '109.51cc',
@@ -269,7 +269,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda Winner X Premium',
     category: 'Commuter',
     price: 95000,
-    image: 'https://via.placeholder.com/300x200/1E88E5/ffffff?text=Winner+X+Premium',
+  image: 'https://placehold.co/300x200/1E88E5/ffffff?text=Winner+X+Premium',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
       displacement: '149.16cc',
@@ -281,9 +281,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '789 mm'
     },
     colors: [
-      { name: 'Candy Tahitian Blue', code: '#1E88E5', image: 'https://via.placeholder.com/300x200/1E88E5/ffffff?text=Winner+X+Premium+Blue' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://via.placeholder.com/300x200/FFFFFF/000000?text=Winner+X+Premium+White' },
-      { name: 'Matte Axis Gray Metallic', code: '#424242', image: 'https://via.placeholder.com/300x200/424242/ffffff?text=Winner+X+Premium+Gray' }
+  { name: 'Candy Tahitian Blue', code: '#1E88E5', image: 'https://placehold.co/300x200/1E88E5/ffffff?text=Winner+X+Premium+Blue' },
+  { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://placehold.co/300x200/FFFFFF/000000?text=Winner+X+Premium+White' },
+  { name: 'Matte Axis Gray Metallic', code: '#424242', image: 'https://placehold.co/300x200/424242/ffffff?text=Winner+X+Premium+Gray' }
     ],
     features: ['Smart Key System', 'Full LED Lighting', 'Digital Instrument Panel', 'Premium Design', 'Enhanced Performance'],
     available: true
@@ -293,7 +293,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda Winner X Standard',
     category: 'Commuter',
     price: 88000,
-    image: 'https://via.placeholder.com/300x200/DC143C/ffffff?text=Winner+X+Standard',
+  image: 'https://placehold.co/300x200/DC143C/ffffff?text=Winner+X+Standard',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
       displacement: '149.16cc',
@@ -305,9 +305,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '789 mm'
     },
     colors: [
-      { name: 'Racing Red', code: '#DC143C', image: 'https://via.placeholder.com/300x200/DC143C/ffffff?text=Winner+X+Standard+Red' },
-      { name: 'Black', code: '#000000', image: 'https://via.placeholder.com/300x200/000000/ffffff?text=Winner+X+Standard+Black' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://via.placeholder.com/300x200/FFFFFF/000000?text=Winner+X+Standard+White' }
+  { name: 'Racing Red', code: '#DC143C', image: 'https://placehold.co/300x200/DC143C/ffffff?text=Winner+X+Standard+Red' },
+  { name: 'Black', code: '#000000', image: 'https://placehold.co/300x200/000000/ffffff?text=Winner+X+Standard+Black' },
+  { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://placehold.co/300x200/FFFFFF/000000?text=Winner+X+Standard+White' }
     ],
     features: ['LED Headlight', 'Digital-Analog Meter', 'Electric Start', 'Fuel Efficient', 'Reliable Performance'],
     available: true
@@ -317,7 +317,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda Winner X Racing',
     category: 'Sport',
     price: 105000,
-    image: 'https://via.placeholder.com/300x200/FF0000/ffffff?text=Winner+X+Racing',
+  image: 'https://placehold.co/300x200/FF0000/ffffff?text=Winner+X+Racing',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
       displacement: '149.16cc',
@@ -329,9 +329,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '789 mm'
     },
     colors: [
-      { name: 'Racing Red', code: '#FF0000', image: 'https://via.placeholder.com/300x200/FF0000/ffffff?text=Winner+X+Racing+Red' },
-      { name: 'Matte Black', code: '#1C1C1C', image: 'https://via.placeholder.com/300x200/1C1C1C/ffffff?text=Winner+X+Racing+Black' },
-      { name: 'Racing Blue', code: '#0066FF', image: 'https://via.placeholder.com/300x200/0066FF/ffffff?text=Winner+X+Racing+Blue' }
+  { name: 'Racing Red', code: '#FF0000', image: 'https://placehold.co/300x200/FF0000/ffffff?text=Winner+X+Racing+Red' },
+  { name: 'Matte Black', code: '#1C1C1C', image: 'https://placehold.co/300x200/1C1C1C/ffffff?text=Winner+X+Racing+Black' },
+  { name: 'Racing Blue', code: '#0066FF', image: 'https://placehold.co/300x200/0066FF/ffffff?text=Winner+X+Racing+Blue' }
     ],
     features: ['Racing Graphics', 'Sport Suspension', 'Full LED Lighting', 'Digital Instrument Panel', 'Enhanced Power', 'Racing Design'],
     available: true
@@ -341,7 +341,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda TMX 125 Alpha',
     category: 'Commuter',
     price: 78000,
-    image: 'https://via.placeholder.com/300x200/228B22/ffffff?text=TMX+125+Alpha',
+  image: 'https://placehold.co/300x200/228B22/ffffff?text=TMX+125+Alpha',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
       displacement: '124.9cc',
@@ -353,9 +353,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '789 mm'
     },
     colors: [
-      { name: 'Forest Green', code: '#228B22', image: 'https://via.placeholder.com/300x200/228B22/ffffff?text=TMX+125+Alpha+Green' },
-      { name: 'Black', code: '#000000', image: 'https://via.placeholder.com/300x200/000000/ffffff?text=TMX+125+Alpha+Black' },
-      { name: 'Candy Tahitian Blue', code: '#1E88E5', image: 'https://via.placeholder.com/300x200/1E88E5/ffffff?text=TMX+125+Alpha+Blue' }
+  { name: 'Forest Green', code: '#228B22', image: 'https://placehold.co/300x200/228B22/ffffff?text=TMX+125+Alpha+Green' },
+  { name: 'Black', code: '#000000', image: 'https://placehold.co/300x200/000000/ffffff?text=TMX+125+Alpha+Black' },
+  { name: 'Candy Tahitian Blue', code: '#1E88E5', image: 'https://placehold.co/300x200/1E88E5/ffffff?text=TMX+125+Alpha+Blue' }
     ],
     features: ['Fuel Efficient', 'Electric Start', 'Analog Speedometer', 'Reliable Engine', 'Affordable Maintenance'],
     available: true
@@ -365,7 +365,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda Giorno+',
     category: 'Scooter',
     price: 62000,
-    image: 'https://via.placeholder.com/300x200/FF1493/ffffff?text=Giorno+Plus',
+  image: 'https://placehold.co/300x200/FF1493/ffffff?text=Giorno+Plus',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
       displacement: '109.51cc',
@@ -377,9 +377,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '740 mm'
     },
     colors: [
-      { name: 'Deep Pink', code: '#FF1493', image: 'https://via.placeholder.com/300x200/FF1493/ffffff?text=Giorno+Plus+Pink' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://via.placeholder.com/300x200/FFFFFF/000000?text=Giorno+Plus+White' },
-      { name: 'Matte Axis Gray Metallic', code: '#424242', image: 'https://via.placeholder.com/300x200/424242/ffffff?text=Giorno+Plus+Gray' }
+  { name: 'Deep Pink', code: '#FF1493', image: 'https://placehold.co/300x200/FF1493/ffffff?text=Giorno+Plus+Pink' },
+  { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://placehold.co/300x200/FFFFFF/000000?text=Giorno+Plus+White' },
+  { name: 'Matte Axis Gray Metallic', code: '#424242', image: 'https://placehold.co/300x200/424242/ffffff?text=Giorno+Plus+Gray' }
     ],
     features: ['eSP Engine', 'LED Headlight', 'Digital Speedometer', 'Stylish Design', 'Compact Size', 'Easy Handling'],
     available: true
