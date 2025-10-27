@@ -1,7 +1,9 @@
 import mysql from 'mysql2/promise';
 import dotenv from 'dotenv';
 
+// Load environment variables - support both .env.local (dev) and .env (production)
 dotenv.config({ path: '.env.local' });
+dotenv.config();
 
 const dbConfig = {
   host: process.env.DB_HOST || 'localhost',

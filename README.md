@@ -121,6 +121,89 @@ npm run start        # Next.js
 npm run start:server # Express server
 ```
 
+## Deploying to Render.com
+
+This project is ready to deploy to Render.com using the included `render.yaml` configuration.
+
+### Prerequisites
+1. A Render.com account
+2. A MySQL database (can be provisioned on Render or use an external service)
+
+### Deployment Steps
+
+#### Option 1: Using Render Blueprint (Recommended)
+1. Push your code to a GitHub repository
+2. Go to [Render Dashboard](https://dashboard.render.com/)
+3. Click "New" → "Blueprint"
+4. Connect your GitHub repository
+5. Render will automatically detect the `render.yaml` and create the services
+6. Configure the environment variables (see below)
+7. Deploy!
+
+#### Option 2: Manual Service Creation
+1. **Create the Database:**
+   - Go to Render Dashboard → New → MySQL
+   - Note down the connection details
+
+2. **Create the API Service:**
+   - Go to Render Dashboard → New → Web Service
+   - Connect your repository
+   - Build Command: `npm install && npm run build:server`
+   - Start Command: `npm run start:server`
+   - Add environment variables (see below)
+
+3. **Create the Web Service:**
+   - Go to Render Dashboard → New → Web Service
+   - Connect your repository
+   - Build Command: `npm install && npm run build`
+   - Start Command: `npm start`
+   - Add environment variables (see below)
+
+### Required Environment Variables
+
+For both services, configure these environment variables in Render:
+
+```env
+NODE_ENV=production
+CLIENT_URL=https://your-web-service.onrender.com
+DB_HOST=your-db-host.render.com
+DB_PORT=3306
+DB_USER=your-db-user
+DB_PASSWORD=your-db-password
+DB_NAME=bolinaohonda
+```
+
+For the API service, set:
+```env
+PORT=5000
+```
+
+For the Web service, set:
+```env
+PORT=3000
+```
+
+### Database Setup
+
+The application will automatically create the required tables on first connection. The schema includes:
+- `customers` - Customer information
+- `vehicles` - Vehicle records
+- `services` - Service offerings
+- `appointments` - Service appointments
+
+### Important Notes
+
+1. **CORS Configuration:** Update the `CLIENT_URL` environment variable to match your deployed frontend URL
+2. **Free Tier Limitations:** Render's free tier spins down after inactivity. First request may take 30-60 seconds
+3. **Database Migrations:** The app automatically creates tables on startup. No manual migration needed
+4. **Health Checks:** Both services include health check endpoints (`/health` for API, `/` for web)
+
+### Monitoring
+
+- API Health Check: `https://your-api-service.onrender.com/health`
+- Check Render logs for any startup or runtime errors
+- Database connection status is logged on server startup
+
 ## Contributing
 
 1. Fork the repository
