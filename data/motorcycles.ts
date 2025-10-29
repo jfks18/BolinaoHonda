@@ -1,7 +1,7 @@
 export interface Motorcycle {
   id: string;
   name: string;
-  category: 'Scooter' | 'Sport' | 'Adventure' | 'Business' | 'Commuter';
+  category: 'Scooters' | 'Underbone' | 'Business';
   price: number;
   image: string;
   specs: {
@@ -28,7 +28,7 @@ export const motorcycles: Motorcycle[] = [
   {
     id: "click125i",
     name: "Click 125i",
-    category: "Scooter",
+    category: "Scooters",
     price: 81900,
     image: "https://placehold.co/400x300/1e40af/ffffff?text=Honda+Click+125i",
     specs: {
@@ -60,7 +60,7 @@ export const motorcycles: Motorcycle[] = [
   {
     id: 'click-125-se',
     name: 'Honda Click 125 Special Edition',
-    category: 'Scooter',
+    category: 'Scooters',
     price: 84900,
     image: 'https://placehold.co/300x200/dc3545/ffffff?text=Click+125+SE',
     specs: {
@@ -84,7 +84,7 @@ export const motorcycles: Motorcycle[] = [
   {
     id: 'beat-playful',
     name: 'Honda BeAT Playful',
-    category: 'Scooter',
+    category: 'Scooters',
     price: 72400,
     image: 'https://placehold.co/300x200/fd7e14/ffffff?text=BeAT+Playful',
     specs: {
@@ -108,7 +108,7 @@ export const motorcycles: Motorcycle[] = [
   {
     id: 'beat-premium',
     name: 'Honda BeAT Premium',
-    category: 'Scooter',
+    category: 'Scooters',
     price: 74400,
     image: 'https://placehold.co/300x200/f8f9fa/000000?text=BeAT+Premium',
     specs: {
@@ -132,7 +132,7 @@ export const motorcycles: Motorcycle[] = [
   {
     id: 'giorno-plus',
     name: 'Honda Giorno+',
-    category: 'Scooter',
+    category: 'Scooters',
     price: 101900,
     image: 'https://placehold.co/300x200/0d6efd/ffffff?text=Giorno+Plus',
     specs: {
@@ -157,7 +157,7 @@ export const motorcycles: Motorcycle[] = [
   {
     id: 'navi-special',
     name: 'Honda NAVi (Special Price)',
-    category: 'Scooter',
+    category: 'Scooters',
     price: 56900,
     image: 'https://placehold.co/300x200/ffc107/000000?text=NAVi+Special',
     specs: {
@@ -183,7 +183,7 @@ export const motorcycles: Motorcycle[] = [
   {
     id: 'wave-rsx-drum',
     name: 'Honda Wave RSX (Drum)',
-    category: 'Commuter',
+    category: 'Underbone',
     price: 62900,
     image: 'https://placehold.co/300x200/ffc107/000000?text=Wave+RSX+Drum',
     specs: {
@@ -207,7 +207,7 @@ export const motorcycles: Motorcycle[] = [
   {
     id: 'wave-rsx-disc',
     name: 'Honda Wave RSX (Disc)',
-    category: 'Commuter',
+    category: 'Underbone',
     price: 64900,
     image: 'https://placehold.co/300x200/0dcaf0/ffffff?text=Wave+RSX+Disc',
     specs: {
@@ -231,7 +231,7 @@ export const motorcycles: Motorcycle[] = [
   {
     id: 'xrm-125-ds',
     name: 'Honda XRM 125 DS',
-    category: 'Commuter',
+    category: 'Underbone',
     price: 71900,
     image: 'https://placehold.co/300x200/fd7e14/ffffff?text=XRM+125+DS',
     specs: {
@@ -255,7 +255,7 @@ export const motorcycles: Motorcycle[] = [
   {
     id: 'xrm-125-dsx',
     name: 'Honda XRM 125 DSX',
-    category: 'Commuter',
+    category: 'Underbone',
     price: 75400,
     image: 'https://placehold.co/300x200/fd7e14/ffffff?text=XRM+125+DSX',
     specs: {
@@ -279,7 +279,7 @@ export const motorcycles: Motorcycle[] = [
   {
     id: 'xrm-125-motard',
     name: 'Honda XRM 125 Motard',
-    category: 'Commuter',
+    category: 'Underbone',
     price: 76900,
     image: 'https://placehold.co/300x200/fd7e14/ffffff?text=XRM+125+Motard',
     specs: {
@@ -303,7 +303,7 @@ export const motorcycles: Motorcycle[] = [
   {
     id: 'rs-125',
     name: 'Honda RS 125',
-    category: 'Commuter',
+    category: 'Underbone',
     price: 75900,
     image: 'https://placehold.co/300x200/fd7e14/ffffff?text=RS+125',
     specs: {
@@ -370,80 +370,6 @@ export const motorcycles: Motorcycle[] = [
       { name: 'Candy Ruby Red', code: '#DC3545', image: 'https://placehold.co/300x200/DC3545/ffffff?text=TMX+Supremo+Ruby+Red' }
     ],
     features: ['Passing Light', 'Informative Meter Panel', 'Electric & Kick Starter', 'Easy Choke Control'],
-    available: true
-  },
-
-  // LEGACY MODELS - Updated Pricing
-  {
-    id: 'cbr150r',
-    name: 'Honda CBR150R',
-    category: 'Sport',
-    price: 140000,
-    image: 'https://placehold.co/300x200/DC143C/ffffff?text=CBR150R',
-    specs: {
-      engine: '4-Stroke, Single Cylinder, DOHC',
-      displacement: '149.16cc',
-      power: '17.1 HP @ 9,000 rpm',
-      torque: '14.4 Nm @ 7,000 rpm',
-      transmission: '6-Speed Manual',
-      fuelCapacity: '12 L',
-      weight: '137 kg',
-      seatHeight: '790 mm'
-    },
-    colors: [
-      { name: 'Racing Red', code: '#DC143C', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
-      { name: 'Victory Black Red', code: '#000000', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
-      { name: 'White', code: '#FFFFFF', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
-    ],
-    features: ['Liquid Cooled Engine', 'Full Digital Meter', 'LED Headlight', 'ABS'],
-    available: true
-  },
-  {
-    id: 'adv160',
-    name: 'Honda ADV 160',
-    category: 'Adventure',
-    price: 135000,
-    image: 'https://placehold.co/300x200/424242/ffffff?text=ADV+160',
-    specs: {
-      engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '156.9cc',
-      power: '15.8 HP @ 8,500 rpm',
-      torque: '15 Nm @ 6,500 rpm',
-      transmission: 'Automatic CVT',
-      fuelCapacity: '8.1 L',
-      weight: '134 kg',
-      seatHeight: '795 mm'
-    },
-    colors: [
-      { name: 'Matte Axis Gray Metallic', code: '#424242', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
-      { name: 'Candy Energy Orange', code: '#FF6B35', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
-    ],
-    features: ['Smart Key System', 'All LED Lighting', 'USB Charging Port', 'Large Ground Clearance'],
-    available: true
-  },
-  {
-    id: 'pcx160',
-    name: 'Honda PCX 160',
-    category: 'Scooter',
-    price: 130000,
-    image: 'https://placehold.co/300x200/FF6B35/ffffff?text=PCX+160',
-    specs: {
-      engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '156.9cc',
-      power: '15.8 HP @ 8,500 rpm',
-      torque: '15 Nm @ 6,500 rpm',
-      transmission: 'Automatic CVT',
-      fuelCapacity: '8.1 L',
-      weight: '132 kg',
-      seatHeight: '764 mm'
-    },
-    colors: [
-      { name: 'Candy Energy Orange', code: '#FF6B35', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
-      { name: 'Matte Axis Gray Metallic', code: '#424242', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
-    ],
-    features: ['Smart Key System', 'All LED Lighting', 'USB Charging Port', 'Digital Instrument Panel'],
     available: true
   }
 ];
