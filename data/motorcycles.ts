@@ -30,7 +30,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda Click 125',
     category: 'Scooter',
     price: 81900,
-    image: 'https://via.placeholder.com/300x200/0d6efd/ffffff?text=Click+125',
+    image: 'https://placehold.co/300x200/0d6efd/ffffff?text=Click+125',
     specs: {
       engine: '4-Stroke, 2-Valve, SOHC, Liquid-Cooled, eSP',
       displacement: '125cc',
@@ -42,10 +42,10 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '769 mm'
     },
     colors: [
-      { name: 'Pearl Arctic White', code: '#f8f9fa', image: '/images/click125-white.jpg' },
-      { name: 'Pearl Sylvestris Gray', code: '#6c757d', image: '/images/click125-gray.jpg' },
-      { name: 'Stellar Blue Metallic', code: '#0d6efd', image: '/images/click125-blue.jpg' },
-      { name: 'Obsidian Black Metallic', code: '#212529', image: '/images/click125-black.jpg' }
+      { name: 'Pearl Arctic White', code: '#f8f9fa', image: 'https://placehold.co/300x200/f8f9fa/000000?text=Click+125+White' },
+      { name: 'Pearl Sylvestris Gray', code: '#6c757d', image: 'https://placehold.co/300x200/6c757d/ffffff?text=Click+125+Gray' },
+      { name: 'Stellar Blue Metallic', code: '#0d6efd', image: 'https://placehold.co/300x200/0d6efd/ffffff?text=Click+125+Blue' },
+      { name: 'Obsidian Black Metallic', code: '#212529', image: 'https://placehold.co/300x200/212529/ffffff?text=Click+125+Black' }
     ],
     features: ['125CC Liquid-Cooled PGM-Fi eSP Engine', 'New Two-Tone Color Combination', 'Wide Tubeless Tires', 'USB Charging Port'],
     available: true
@@ -55,7 +55,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda Click 125 Special Edition',
     category: 'Scooter',
     price: 84900,
-    image: 'https://via.placeholder.com/300x200/dc3545/ffffff?text=Click+125+SE',
+    image: 'https://placehold.co/300x200/dc3545/ffffff?text=Click+125+SE',
     specs: {
       engine: '4-Stroke, 2-Valve, SOHC, Liquid-Cooled, eSP',
       displacement: '125cc',
@@ -67,9 +67,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '769 mm'
     },
     colors: [
-      { name: 'Obsidian Black Metallic', code: '#212529', image: '/images/click125se-black.jpg' },
-      { name: 'Pearl Arctic White', code: '#f8f9fa', image: '/images/click125se-white.jpg' },
-      { name: 'Pearl Crimson Red', code: '#dc3545', image: '/images/click125se-red.jpg' }
+      { name: 'Obsidian Black Metallic', code: '#212529', image: 'https://placehold.co/300x200/212529/ffffff?text=Click+125+SE+Black' },
+      { name: 'Pearl Arctic White', code: '#f8f9fa', image: 'https://placehold.co/300x200/f8f9fa/000000?text=Click+125+SE+White' },
+      { name: 'Pearl Crimson Red', code: '#dc3545', image: 'https://placehold.co/300x200/dc3545/ffffff?text=Click+125+SE+Red' }
     ],
     features: ['3D Special Edition Emblem', 'Premium Two-Tone Design', 'Enhanced eSP Engine', 'USB Charging Port'],
     available: true
@@ -79,7 +79,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda BeAT Playful',
     category: 'Scooter',
     price: 72400,
-    image: 'https://via.placeholder.com/300x200/fd7e14/ffffff?text=BeAT+Playful',
+    image: 'https://placehold.co/300x200/fd7e14/ffffff?text=BeAT+Playful',
     specs: {
       engine: '4-Stroke, Air-Cooled, SOHC, eSP',
       displacement: '109.51cc',
@@ -91,10 +91,10 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '740 mm'
     },
     colors: [
-      { name: 'Candy Energy Orange', code: '#fd7e14', image: '/images/beat-playful-orange.jpg' },
-      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: '/images/beat-playful-white.jpg' },
-      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: '/images/beat-playful-gray.jpg' },
-      { name: 'Candy Tahitian Blue', code: '#0dcaf0', image: '/images/beat-playful-blue.jpg' }
+      { name: 'Candy Energy Orange', code: '#fd7e14', image: 'https://placehold.co/300x200/fd7e14/ffffff?text=BeAT+Playful+Orange' },
+      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: 'https://placehold.co/300x200/f8f9fa/000000?text=BeAT+Playful+White' },
+      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: 'https://placehold.co/300x200/6c757d/ffffff?text=BeAT+Playful+Gray' },
+      { name: 'Candy Tahitian Blue', code: '#0dcaf0', image: 'https://placehold.co/300x200/0dcaf0/000000?text=BeAT+Playful+Blue' }
     ],
     features: ['Enhanced Smart Power (eSP)', 'Playful Design Elements', 'Fuel Injection System', 'LED Position Light'],
     available: true
@@ -104,7 +104,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda BeAT Premium',
     category: 'Scooter',
     price: 74400,
-    image: 'https://via.placeholder.com/300x200/f8f9fa/000000?text=BeAT+Premium',
+    image: 'https://placehold.co/300x200/f8f9fa/000000?text=BeAT+Premium',
     specs: {
       engine: '4-Stroke, Air-Cooled, SOHC, eSP',
       displacement: '109.51cc',
@@ -116,9 +116,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '740 mm'
     },
     colors: [
-      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: '/images/beat-premium-white.jpg' },
-      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: '/images/beat-premium-gray.jpg' },
-      { name: 'Candy Energy Orange', code: '#fd7e14', image: '/images/beat-premium-orange.jpg' }
+      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: 'https://placehold.co/300x200/f8f9fa/000000?text=BeAT+Premium+White' },
+      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: 'https://placehold.co/300x200/6c757d/ffffff?text=BeAT+Premium+Gray' },
+      { name: 'Candy Energy Orange', code: '#fd7e14', image: 'https://placehold.co/300x200/fd7e14/ffffff?text=BeAT+Premium+Orange' }
     ],
     features: ['Premium Design Package', 'Enhanced eSP Engine', 'PGM-Fi Fuel Injection', 'Full LED Lighting'],
     available: true
@@ -128,7 +128,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda Giorno+',
     category: 'Scooter',
     price: 101900,
-    image: 'https://via.placeholder.com/300x200/0d6efd/ffffff?text=Giorno+Plus',
+    image: 'https://placehold.co/300x200/0d6efd/ffffff?text=Giorno+Plus',
     specs: {
       engine: '4-Stroke, Air-Cooled, SOHC, eSP',
       displacement: '109.51cc',
@@ -140,9 +140,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '765 mm'
     },
     colors: [
-      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: '/images/giorno-white.jpg' },
-      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: '/images/giorno-gray.jpg' },
-      { name: 'Pearl Nightfall Blue', code: '#0d6efd', image: '/images/giorno-blue.jpg' }
+      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Pearl Nightfall Blue', code: '#0d6efd', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
     ],
     features: ['Retro-Modern Design', 'Enhanced eSP Technology', 'Smart Key System', 'LED Lighting Package'],
     available: true
@@ -152,7 +152,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda NAVi (Special Price)',
     category: 'Scooter',
     price: 56900,
-    image: 'https://via.placeholder.com/300x200/ffc107/000000?text=NAVi+Special',
+    image: 'https://placehold.co/300x200/ffc107/000000?text=NAVi+Special',
     specs: {
       engine: '4-Stroke, Air-Cooled, SOHC',
       displacement: '109.51cc',
@@ -164,9 +164,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '765 mm'
     },
     colors: [
-      { name: 'Pearl Sports Yellow', code: '#ffc107', image: '/images/navi-yellow.jpg' },
-      { name: 'Patriot Red', code: '#dc3545', image: '/images/navi-red.jpg' },
-      { name: 'Black', code: '#212529', image: '/images/navi-black.jpg' }
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Patriot Red', code: '#dc3545', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Black', code: '#212529', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
     ],
     features: ['Adventure-Inspired Design', 'Rugged Styling Elements', 'LED Headlight', 'Special Pricing Offer'],
     available: true
@@ -178,7 +178,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda Wave RSX (Drum)',
     category: 'Commuter',
     price: 62900,
-    image: 'https://via.placeholder.com/300x200/ffc107/000000?text=Wave+RSX+Drum',
+    image: 'https://placehold.co/300x200/ffc107/000000?text=Wave+RSX+Drum',
     specs: {
       engine: '4-Stroke, Air-Cooled, SOHC, eSP',
       displacement: '109.51cc',
@@ -190,9 +190,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '760 mm'
     },
     colors: [
-      { name: 'Pearl Sports Yellow', code: '#ffc107', image: '/images/wave-rsx-yellow.jpg' },
-      { name: 'Candy Tahitian Blue', code: '#0dcaf0', image: '/images/wave-rsx-blue.jpg' },
-      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: '/images/wave-rsx-white.jpg' }
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Candy Tahitian Blue', code: '#0dcaf0', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
     ],
     features: ['Enhanced Smart Power (eSP)', 'Fuel Injection System', 'Digital Speedometer', 'LED Position Light'],
     available: true
@@ -202,7 +202,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda Wave RSX (Disc)',
     category: 'Commuter',
     price: 64900,
-    image: 'https://via.placeholder.com/300x200/0dcaf0/ffffff?text=Wave+RSX+Disc',
+    image: 'https://placehold.co/300x200/0dcaf0/ffffff?text=Wave+RSX+Disc',
     specs: {
       engine: '4-Stroke, Air-Cooled, SOHC, eSP',
       displacement: '109.51cc',
@@ -214,9 +214,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '760 mm'
     },
     colors: [
-      { name: 'Pearl Sports Yellow', code: '#ffc107', image: '/images/wave-rsx-disc-yellow.jpg' },
-      { name: 'Candy Tahitian Blue', code: '#0dcaf0', image: '/images/wave-rsx-disc-blue.jpg' },
-      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: '/images/wave-rsx-disc-white.jpg' }
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Candy Tahitian Blue', code: '#0dcaf0', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
     ],
     features: ['Enhanced eSP Technology', 'Front Disc Brake System', 'PGM-Fi Fuel Injection', 'Digital Instrument Cluster'],
     available: true
@@ -226,7 +226,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda XRM 125 DS',
     category: 'Commuter',
     price: 71900,
-    image: 'https://via.placeholder.com/300x200/fd7e14/ffffff?text=XRM+125+DS',
+    image: 'https://placehold.co/300x200/fd7e14/ffffff?text=XRM+125+DS',
     specs: {
       engine: '4-Stroke, Air-Cooled, SOHC, eSP',
       displacement: '124.89cc',
@@ -238,9 +238,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '784 mm'
     },
     colors: [
-      { name: 'Candy Energy Orange', code: '#fd7e14', image: '/images/xrm125ds-orange.jpg' },
-      { name: 'Pearl Sports Yellow', code: '#ffc107', image: '/images/xrm125ds-yellow.jpg' },
-      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: '/images/xrm125ds-gray.jpg' }
+      { name: 'Candy Energy Orange', code: '#fd7e14', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
     ],
     features: ['Dual Sport Design', 'Enhanced eSP Engine', 'PGM-Fi Technology', 'Front Disc Brake'],
     available: true
@@ -250,7 +250,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda XRM 125 DSX',
     category: 'Commuter',
     price: 75400,
-    image: 'https://via.placeholder.com/300x200/fd7e14/ffffff?text=XRM+125+DSX',
+    image: 'https://placehold.co/300x200/fd7e14/ffffff?text=XRM+125+DSX',
     specs: {
       engine: '4-Stroke, Air-Cooled, SOHC, eSP',
       displacement: '124.89cc',
@@ -262,9 +262,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '784 mm'
     },
     colors: [
-      { name: 'Candy Energy Orange', code: '#fd7e14', image: '/images/xrm125dsx-orange.jpg' },
-      { name: 'Pearl Sports Yellow', code: '#ffc107', image: '/images/xrm125dsx-yellow.jpg' },
-      { name: 'Matte Black Metallic', code: '#212529', image: '/images/xrm125dsx-black.jpg' }
+      { name: 'Candy Energy Orange', code: '#fd7e14', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Matte Black Metallic', code: '#212529', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
     ],
     features: ['Premium DSX Package', 'Enhanced eSP Technology', 'Advanced PGM-Fi System', 'Premium Graphics Package'],
     available: true
@@ -274,7 +274,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda XRM 125 Motard',
     category: 'Commuter',
     price: 76900,
-    image: 'https://via.placeholder.com/300x200/fd7e14/ffffff?text=XRM+125+Motard',
+    image: 'https://placehold.co/300x200/fd7e14/ffffff?text=XRM+125+Motard',
     specs: {
       engine: '4-Stroke, Air-Cooled, SOHC, eSP',
       displacement: '124.89cc',
@@ -286,9 +286,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '790 mm'
     },
     colors: [
-      { name: 'Candy Energy Orange', code: '#fd7e14', image: '/images/xrm125motard-orange.jpg' },
-      { name: 'Pearl Sports Yellow', code: '#ffc107', image: '/images/xrm125motard-yellow.jpg' },
-      { name: 'Matte Black Metallic', code: '#212529', image: '/images/xrm125motard-black.jpg' }
+      { name: 'Candy Energy Orange', code: '#fd7e14', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Matte Black Metallic', code: '#212529', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
     ],
     features: ['Motard Styling Package', 'Enhanced eSP Engine', 'Front & Rear Disc Brakes', 'Supermoto Design'],
     available: true
@@ -298,7 +298,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda RS 125',
     category: 'Commuter',
     price: 75900,
-    image: 'https://via.placeholder.com/300x200/fd7e14/ffffff?text=RS+125',
+    image: 'https://placehold.co/300x200/fd7e14/ffffff?text=RS+125',
     specs: {
       engine: '4-Stroke, Air-Cooled, SOHC, eSP',
       displacement: '124.89cc',
@@ -310,9 +310,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '775 mm'
     },
     colors: [
-      { name: 'Candy Energy Orange', code: '#fd7e14', image: '/images/rs125-orange.jpg' },
-      { name: 'Pearl Sports Yellow', code: '#ffc107', image: '/images/rs125-yellow.jpg' },
-      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: '/images/rs125-gray.jpg' }
+      { name: 'Candy Energy Orange', code: '#fd7e14', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
     ],
     features: ['Racing-Inspired Design', 'Enhanced eSP Technology', 'PGM-Fi System', 'Front Disc Brake'],
     available: true
@@ -324,7 +324,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda CBR150R',
     category: 'Sport',
     price: 140000,
-    image: 'https://via.placeholder.com/300x200/DC143C/ffffff?text=CBR150R',
+    image: 'https://placehold.co/300x200/DC143C/ffffff?text=CBR150R',
     specs: {
       engine: '4-Stroke, Single Cylinder, DOHC',
       displacement: '149.16cc',
@@ -336,9 +336,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '790 mm'
     },
     colors: [
-      { name: 'Racing Red', code: '#DC143C', image: '/images/cbr150r-red.jpg' },
-      { name: 'Victory Black Red', code: '#000000', image: '/images/cbr150r-black.jpg' },
-      { name: 'White', code: '#FFFFFF', image: '/images/cbr150r-white.jpg' }
+      { name: 'Racing Red', code: '#DC143C', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Victory Black Red', code: '#000000', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'White', code: '#FFFFFF', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
     ],
     features: ['Liquid Cooled Engine', 'Full Digital Meter', 'LED Headlight', 'ABS'],
     available: true
@@ -348,7 +348,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda ADV 160',
     category: 'Adventure',
     price: 135000,
-    image: 'https://via.placeholder.com/300x200/424242/ffffff?text=ADV+160',
+    image: 'https://placehold.co/300x200/424242/ffffff?text=ADV+160',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
       displacement: '156.9cc',
@@ -360,9 +360,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '795 mm'
     },
     colors: [
-      { name: 'Matte Axis Gray Metallic', code: '#424242', image: '/images/adv160-gray.jpg' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: '/images/adv160-white.jpg' },
-      { name: 'Candy Energy Orange', code: '#FF6B35', image: '/images/adv160-orange.jpg' }
+      { name: 'Matte Axis Gray Metallic', code: '#424242', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Candy Energy Orange', code: '#FF6B35', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
     ],
     features: ['Smart Key System', 'All LED Lighting', 'USB Charging Port', 'Large Ground Clearance'],
     available: true
@@ -372,7 +372,7 @@ export const motorcycles: Motorcycle[] = [
     name: 'Honda PCX 160',
     category: 'Scooter',
     price: 130000,
-    image: 'https://via.placeholder.com/300x200/FF6B35/ffffff?text=PCX+160',
+    image: 'https://placehold.co/300x200/FF6B35/ffffff?text=PCX+160',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
       displacement: '156.9cc',
@@ -384,9 +384,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '764 mm'
     },
     colors: [
-      { name: 'Candy Energy Orange', code: '#FF6B35', image: '/images/pcx160-orange.jpg' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: '/images/pcx160-white.jpg' },
-      { name: 'Matte Axis Gray Metallic', code: '#424242', image: '/images/pcx160-gray.jpg' }
+      { name: 'Candy Energy Orange', code: '#FF6B35', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Matte Axis Gray Metallic', code: '#424242', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
     ],
     features: ['Smart Key System', 'All LED Lighting', 'USB Charging Port', 'Digital Instrument Panel'],
     available: true
