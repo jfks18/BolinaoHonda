@@ -26,28 +26,35 @@ export interface Motorcycle {
 export const motorcycles: Motorcycle[] = [
   // SCOOTERS - Updated with Honda Philippines Official Data (2024)
   {
-    id: 'click-125',
-    name: 'Honda Click 125',
-    category: 'Scooter',
-    price: 81900,
-    image: 'https://placehold.co/300x200/0d6efd/ffffff?text=Click+125',
+    id: "click125i",
+    name: "Click 125i",
+    category: "Scooter",
+    price: 69800,
+    image: "https://placehold.co/400x300/1e40af/ffffff?text=Honda+Click+125i",
     specs: {
-      engine: '4-Stroke, 2-Valve, SOHC, Liquid-Cooled, eSP',
-      displacement: '125cc',
-      power: '8.2 kW @ 8,500 rpm',
-      torque: '10.8 Nm @ 5,000 rpm',
-      transmission: 'V-Matic (CVT)',
-      fuelCapacity: '5.5 L',
-      weight: '112 kg',
-      seatHeight: '769 mm'
+      engine: "125cc Single Cylinder",
+      displacement: "125cc",
+      power: "8.5 HP @ 8,750 rpm",
+      torque: "10.9 Nm @ 5,250 rpm",
+      transmission: "Automatic CVT",
+      fuelCapacity: "5.5L",
+      weight: "110kg",
+      seatHeight: "765mm"
     },
     colors: [
-      { name: 'Pearl Arctic White', code: '#f8f9fa', image: 'https://placehold.co/300x200/f8f9fa/000000?text=Click+125+White' },
-      { name: 'Pearl Sylvestris Gray', code: '#6c757d', image: 'https://placehold.co/300x200/6c757d/ffffff?text=Click+125+Gray' },
-      { name: 'Stellar Blue Metallic', code: '#0d6efd', image: 'https://placehold.co/300x200/0d6efd/ffffff?text=Click+125+Blue' },
-      { name: 'Obsidian Black Metallic', code: '#212529', image: 'https://placehold.co/300x200/212529/ffffff?text=Click+125+Black' }
+      { name: "Pearl Arctic White", code: "#F8F9FA", image: "https://placehold.co/400x300/F8F9FA/000000?text=Click+125i+Arctic+White" },
+      { name: "Pearl Sylvestris Gray", code: "#6C757D", image: "https://placehold.co/400x300/6C757D/FFFFFF?text=Click+125i+Sylvestris+Gray" },
+      { name: "Stellar Blue Metallic", code: "#0D6EFD", image: "https://placehold.co/400x300/0D6EFD/FFFFFF?text=Click+125i+Stellar+Blue" },
+      { name: "Obsidian Black Metallic", code: "#212529", image: "https://placehold.co/400x300/212529/FFFFFF?text=Click+125i+Obsidian+Black" },
+      { name: "Pearl Crimson Red", code: "#DC3545", image: "https://placehold.co/400x300/DC3545/FFFFFF?text=Click+125i+Crimson+Red" }
     ],
-    features: ['125CC Liquid-Cooled PGM-Fi eSP Engine', 'New Two-Tone Color Combination', 'Wide Tubeless Tires', 'USB Charging Port'],
+    features: [
+      "Smart Key System",
+      "Digital Instrument Panel",
+      "LED Headlight",
+      "Under-seat Storage",
+      "Tubeless Tires"
+    ],
     available: true
   },
   {
@@ -91,10 +98,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '740 mm'
     },
     colors: [
-      { name: 'Candy Energy Orange', code: '#fd7e14', image: 'https://placehold.co/300x200/fd7e14/ffffff?text=BeAT+Playful+Orange' },
-      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: 'https://placehold.co/300x200/f8f9fa/000000?text=BeAT+Playful+White' },
-      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: 'https://placehold.co/300x200/6c757d/ffffff?text=BeAT+Playful+Gray' },
-      { name: 'Candy Tahitian Blue', code: '#0dcaf0', image: 'https://placehold.co/300x200/0dcaf0/000000?text=BeAT+Playful+Blue' }
+      { name: 'Fighting Red', code: '#DC3545', image: 'https://placehold.co/300x200/DC3545/ffffff?text=BeAT+Playful+Fighting+Red' },
+      { name: 'Pearl Sylvestris Gray', code: '#6C757D', image: 'https://placehold.co/300x200/6C757D/ffffff?text=BeAT+Playful+Sylvestris+Gray' },
+      { name: 'Pearl Tourmaline Purple', code: '#6F42C1', image: 'https://placehold.co/300x200/6F42C1/ffffff?text=BeAT+Playful+Tourmaline+Purple' }
     ],
     features: ['Enhanced Smart Power (eSP)', 'Playful Design Elements', 'Fuel Injection System', 'LED Position Light'],
     available: true
@@ -116,9 +122,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '740 mm'
     },
     colors: [
-      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: 'https://placehold.co/300x200/f8f9fa/000000?text=BeAT+Premium+White' },
-      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: 'https://placehold.co/300x200/6c757d/ffffff?text=BeAT+Premium+Gray' },
-      { name: 'Candy Energy Orange', code: '#fd7e14', image: 'https://placehold.co/300x200/fd7e14/ffffff?text=BeAT+Premium+Orange' }
+      { name: 'Matte Axis Gray Metallic', code: '#6C757D', image: 'https://placehold.co/300x200/6C757D/ffffff?text=BeAT+Premium+Axis+Gray' },
+      { name: 'Pearl Arctic White', code: '#F8F9FA', image: 'https://placehold.co/300x200/F8F9FA/000000?text=BeAT+Premium+Arctic+White' },
+      { name: 'Matte Summit Silver Metallic', code: '#ADB5BD', image: 'https://placehold.co/300x200/ADB5BD/000000?text=BeAT+Premium+Summit+Silver' }
     ],
     features: ['Premium Design Package', 'Enhanced eSP Engine', 'PGM-Fi Fuel Injection', 'Full LED Lighting'],
     available: true
@@ -140,9 +146,10 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '765 mm'
     },
     colors: [
-      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
-      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
-      { name: 'Pearl Nightfall Blue', code: '#0d6efd', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
+      { name: 'Virgin Beige', code: '#F5F5DC', image: 'https://placehold.co/300x200/F5F5DC/000000?text=Giorno+Virgin+Beige' },
+      { name: 'Matte Gunpowder Black Metallic', code: '#2C3E50', image: 'https://placehold.co/300x200/2C3E50/ffffff?text=Giorno+Gunpowder+Black' },
+      { name: 'Pearl Jubilee White', code: '#F8F9FA', image: 'https://placehold.co/300x200/F8F9FA/000000?text=Giorno+Jubilee+White' },
+      { name: 'Piquant Orange', code: '#FF8C00', image: 'https://placehold.co/300x200/FF8C00/ffffff?text=Giorno+Piquant+Orange' }
     ],
     features: ['Retro-Modern Design', 'Enhanced eSP Technology', 'Smart Key System', 'LED Lighting Package'],
     available: true
