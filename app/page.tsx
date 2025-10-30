@@ -227,15 +227,12 @@ const MotorcycleCard = memo(({
             </button>
             <div className="row g-2">
               <div className="col-6">
-                <button className="btn btn-outline-primary w-100 rounded-modern small">
-                  <span className="d-block">📞</span>
-                  <span className="small">Call</span>
-                </button>
-              </div>
-              <div className="col-6">
-                <button className="btn btn-outline-success w-100 rounded-modern small">
-                  <span className="d-block">💬</span>
-                  <span className="small">Message</span>
+                <button  className="btn btn-outline-success w-100 rounded-modern small">
+                  <a href="https://m.me/motorcentrumbolinao.guanzon">
+                         <span className="d-block">💬</span>
+                        <span className="small">Message</span>
+                  </a>
+             
                 </button>
               </div>
             </div>
