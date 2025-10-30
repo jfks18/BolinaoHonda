@@ -31,19 +31,19 @@ export const motorcycles: Motorcycle[] = [
     price: 120000,
   image: 'https://placehold.co/300x200/FF6B35/ffffff?text=PCX+160',
     specs: {
-      engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '156.9cc',
-      power: '15.8 HP @ 8,500 rpm',
-      torque: '15 Nm @ 6,500 rpm',
-      transmission: 'Automatic CVT',
+      engine: '4-Stroke, 4-Valve, SOHC, Liquid-Cooled, eSP+',
+      displacement: '157cc',
+      power: '11.8 kW @ 8,500 rpm',
+      torque: '14.7 Nm @ 6,500 rpm',
+      transmission: 'Automatic',
       fuelCapacity: '8.1 L',
       weight: '132 kg',
       seatHeight: '764 mm'
     },
     colors: [
-  { name: 'Candy Energy Orange', code: '#FF6B35', image: 'https://placehold.co/300x200/FF6B35/ffffff?text=PCX+160+Orange' },
-  { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://placehold.co/300x200/FFFFFF/000000?text=PCX+160+White' },
-  { name: 'Matte Axis Gray Metallic', code: '#424242', image: 'https://placehold.co/300x200/424242/ffffff?text=PCX+160+Gray' }
+  { name: 'Vortex Red Metallic', code: '#da0000', image: 'https://placehold.co/300x200/FF6B35/ffffff?text=PCX+160+Orange' },
+  { name: 'Pearl Fadeless White', code: '#FFFFFF', image: 'https://placehold.co/300x200/FFFFFF/000000?text=PCX+160+White' },
+  { name: 'Matte Axis Gray Metallic', code: '#767575', image: 'https://placehold.co/300x200/767575/ffffff?text=PCX+160+Gray' }
     ],
     features: ['Smart Key System', 'All LED Lighting', 'USB Charging Port', 'Digital Instrument Panel'],
     available: true
