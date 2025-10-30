@@ -1,0 +1,449 @@
+export interface Motorcycle {
+  id: string;
+  name: string;
+  category: 'Scooter' | 'Sport' | 'Adventure' | 'Business' | 'Commuter';
+  price: number;
+  image: string;
+  specs: {
+    engine: string;
+    displacement: string;
+    power: string;
+    torque: string;
+    transmission: string;
+    fuelCapacity: string;
+    weight: string;
+    seatHeight: string;
+  };
+  colors: {
+    name: string;
+    code: string;
+    image: string;
+  }[];
+  features: string[];
+  available: boolean;
+}
+
+export const motorcycles: Motorcycle[] = [
+  // SCOOTERS - Updated with Honda Philippines Official Data (2024)
+  {
+    id: "click125i",
+    name: "Click 125i",
+    category: "Scooter",
+    price: 81900,
+    image: "https://placehold.co/400x300/1e40af/ffffff?text=Honda+Click+125i",
+    specs: {
+      engine: "125cc Single Cylinder",
+      displacement: "125cc",
+      power: "8.5 HP @ 8,750 rpm",
+      torque: "10.9 Nm @ 5,250 rpm",
+      transmission: "Automatic CVT",
+      fuelCapacity: "5.5L",
+      weight: "110kg",
+      seatHeight: "765mm"
+    },
+    colors: [
+      { name: "Pearl Arctic White", code: "#F8F9FA", image: "https://placehold.co/400x300/F8F9FA/000000?text=Click+125i+Arctic+White" },
+      { name: "Pearl Sylvestris Gray", code: "#6C757D", image: "https://placehold.co/400x300/6C757D/FFFFFF?text=Click+125i+Sylvestris+Gray" },
+      { name: "Stellar Blue Metallic", code: "#0D6EFD", image: "https://placehold.co/400x300/0D6EFD/FFFFFF?text=Click+125i+Stellar+Blue" },
+      { name: "Obsidian Black Metallic", code: "#212529", image: "https://placehold.co/400x300/212529/FFFFFF?text=Click+125i+Obsidian+Black" },
+      { name: "Pearl Crimson Red", code: "#DC3545", image: "https://placehold.co/400x300/DC3545/FFFFFF?text=Click+125i+Crimson+Red" }
+    ],
+    features: [
+      "Smart Key System",
+      "Digital Instrument Panel",
+      "LED Headlight",
+      "Under-seat Storage",
+      "Tubeless Tires"
+    ],
+    available: true
+  },
+  {
+    id: 'click-125-se',
+    name: 'Honda Click 125 Special Edition',
+    category: 'Scooter',
+    price: 84900,
+    image: 'https://placehold.co/300x200/dc3545/ffffff?text=Click+125+SE',
+    specs: {
+      engine: '4-Stroke, 2-Valve, SOHC, Liquid-Cooled, eSP',
+      displacement: '125cc',
+      power: '8.2 kW @ 8,500 rpm',
+      torque: '10.8 Nm @ 5,000 rpm',
+      transmission: 'V-Matic (CVT)',
+      fuelCapacity: '5.5 L',
+      weight: '112 kg',
+      seatHeight: '769 mm'
+    },
+    colors: [
+      { name: 'Obsidian Black Metallic', code: '#212529', image: 'https://placehold.co/300x200/212529/ffffff?text=Click+125+SE+Black' },
+      { name: 'Pearl Arctic White', code: '#f8f9fa', image: 'https://placehold.co/300x200/f8f9fa/000000?text=Click+125+SE+White' },
+      { name: 'Pearl Crimson Red', code: '#dc3545', image: 'https://placehold.co/300x200/dc3545/ffffff?text=Click+125+SE+Red' }
+    ],
+    features: ['3D Special Edition Emblem', 'Premium Two-Tone Design', 'Enhanced eSP Engine', 'USB Charging Port'],
+    available: true
+  },
+  {
+    id: 'beat-playful',
+    name: 'Honda BeAT Playful',
+    category: 'Scooter',
+    price: 72400,
+    image: 'https://placehold.co/300x200/fd7e14/ffffff?text=BeAT+Playful',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '109.51cc',
+      power: '6.6 kW @ 7,500 rpm',
+      torque: '8.9 Nm @ 5,500 rpm',
+      transmission: 'V-Matic (CVT)',
+      fuelCapacity: '4.2 L',
+      weight: '90 kg',
+      seatHeight: '740 mm'
+    },
+    colors: [
+      { name: 'Fighting Red', code: '#DC3545', image: 'https://placehold.co/300x200/DC3545/ffffff?text=BeAT+Playful+Fighting+Red' },
+      { name: 'Pearl Sylvestris Gray', code: '#6C757D', image: 'https://placehold.co/300x200/6C757D/ffffff?text=BeAT+Playful+Sylvestris+Gray' },
+      { name: 'Pearl Tourmaline Purple', code: '#6F42C1', image: 'https://placehold.co/300x200/6F42C1/ffffff?text=BeAT+Playful+Tourmaline+Purple' }
+    ],
+    features: ['Enhanced Smart Power (eSP)', 'Playful Design Elements', 'Fuel Injection System', 'LED Position Light'],
+    available: true
+  },
+  {
+    id: 'beat-premium',
+    name: 'Honda BeAT Premium',
+    category: 'Scooter',
+    price: 74400,
+    image: 'https://placehold.co/300x200/f8f9fa/000000?text=BeAT+Premium',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '109.51cc',
+      power: '6.6 kW @ 7,500 rpm',
+      torque: '8.9 Nm @ 5,500 rpm',
+      transmission: 'V-Matic (CVT)',
+      fuelCapacity: '4.2 L',
+      weight: '90 kg',
+      seatHeight: '740 mm'
+    },
+    colors: [
+      { name: 'Matte Axis Gray Metallic', code: '#6C757D', image: 'https://placehold.co/300x200/6C757D/ffffff?text=BeAT+Premium+Axis+Gray' },
+      { name: 'Pearl Arctic White', code: '#F8F9FA', image: 'https://placehold.co/300x200/F8F9FA/000000?text=BeAT+Premium+Arctic+White' },
+      { name: 'Matte Summit Silver Metallic', code: '#ADB5BD', image: 'https://placehold.co/300x200/ADB5BD/000000?text=BeAT+Premium+Summit+Silver' }
+    ],
+    features: ['Premium Design Package', 'Enhanced eSP Engine', 'PGM-Fi Fuel Injection', 'Full LED Lighting'],
+    available: true
+  },
+  {
+    id: 'giorno-plus',
+    name: 'Honda Giorno+',
+    category: 'Scooter',
+    price: 101900,
+    image: 'https://placehold.co/300x200/0d6efd/ffffff?text=Giorno+Plus',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '109.51cc',
+      power: '6.6 kW @ 7,500 rpm',
+      torque: '8.9 Nm @ 5,500 rpm',
+      transmission: 'V-Matic (CVT)',
+      fuelCapacity: '4.2 L',
+      weight: '96 kg',
+      seatHeight: '765 mm'
+    },
+    colors: [
+      { name: 'Virgin Beige', code: '#F5F5DC', image: 'https://placehold.co/300x200/F5F5DC/000000?text=Giorno+Virgin+Beige' },
+      { name: 'Matte Gunpowder Black Metallic', code: '#2C3E50', image: 'https://placehold.co/300x200/2C3E50/ffffff?text=Giorno+Gunpowder+Black' },
+      { name: 'Pearl Jubilee White', code: '#F8F9FA', image: 'https://placehold.co/300x200/F8F9FA/000000?text=Giorno+Jubilee+White' },
+      { name: 'Piquant Orange', code: '#FF8C00', image: 'https://placehold.co/300x200/FF8C00/ffffff?text=Giorno+Piquant+Orange' }
+    ],
+    features: ['Retro-Modern Design', 'Enhanced eSP Technology', 'Smart Key System', 'LED Lighting Package'],
+    available: true
+  },
+  {
+    id: 'navi-special',
+    name: 'Honda NAVi (Special Price)',
+    category: 'Scooter',
+    price: 56900,
+    image: 'https://placehold.co/300x200/ffc107/000000?text=NAVi+Special',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC',
+      displacement: '109.51cc',
+      power: '6.0 kW @ 7,000 rpm',
+      torque: '8.8 Nm @ 5,500 rpm',
+      transmission: 'V-Matic (CVT)',
+      fuelCapacity: '3.8 L',
+      weight: '85 kg',
+      seatHeight: '765 mm'
+    },
+    colors: [
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: 'https://placehold.co/300x200/ffc107/000000?text=NAVi+Sports+Yellow' },
+      { name: 'Patriot Red', code: '#dc3545', image: 'https://placehold.co/300x200/dc3545/ffffff?text=NAVi+Patriot+Red' },
+      { name: 'Black', code: '#212529', image: 'https://placehold.co/300x200/212529/ffffff?text=NAVi+Black' }
+    ],
+    features: ['Adventure-Inspired Design', 'Rugged Styling Elements', 'LED Headlight', 'Special Pricing Offer'],
+    available: true
+  },
+
+  // UNDERBONE MOTORCYCLES - Honda Philippines Official Data
+  {
+    id: 'wave-rsx-drum',
+    name: 'Honda Wave RSX (Drum)',
+    category: 'Commuter',
+    price: 62900,
+    image: 'https://placehold.co/300x200/ffc107/000000?text=Wave+RSX+Drum',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '109.51cc',
+      power: '6.6 kW @ 7,500 rpm',
+      torque: '8.9 Nm @ 5,500 rpm',
+      transmission: 'Rotary 4-Speed',
+      fuelCapacity: '3.7 L',
+      weight: '96 kg',
+      seatHeight: '760 mm'
+    },
+    colors: [
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: 'https://placehold.co/300x200/ffc107/000000?text=Wave+RSX+Sports+Yellow' },
+      { name: 'Candy Tahitian Blue', code: '#0dcaf0', image: 'https://placehold.co/300x200/0dcaf0/000000?text=Wave+RSX+Tahitian+Blue' },
+      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: 'https://placehold.co/300x200/f8f9fa/000000?text=Wave+RSX+Jasmine+White' }
+    ],
+    features: ['Enhanced Smart Power (eSP)', 'Fuel Injection System', 'Digital Speedometer', 'LED Position Light'],
+    available: true
+  },
+  {
+    id: 'wave-rsx-disc',
+    name: 'Honda Wave RSX (Disc)',
+    category: 'Commuter',
+    price: 64900,
+    image: 'https://placehold.co/300x200/0dcaf0/ffffff?text=Wave+RSX+Disc',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '109.51cc',
+      power: '6.6 kW @ 7,500 rpm',
+      torque: '8.9 Nm @ 5,500 rpm',
+      transmission: 'Rotary 4-Speed',
+      fuelCapacity: '3.7 L',
+      weight: '98 kg',
+      seatHeight: '760 mm'
+    },
+    colors: [
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: 'https://placehold.co/300x200/ffc107/000000?text=Wave+RSX+Disc+Sports+Yellow' },
+      { name: 'Candy Tahitian Blue', code: '#0dcaf0', image: 'https://placehold.co/300x200/0dcaf0/000000?text=Wave+RSX+Disc+Tahitian+Blue' },
+      { name: 'Pearl Jasmine White', code: '#f8f9fa', image: 'https://placehold.co/300x200/f8f9fa/000000?text=Wave+RSX+Disc+Jasmine+White' }
+    ],
+    features: ['Enhanced eSP Technology', 'Front Disc Brake System', 'PGM-Fi Fuel Injection', 'Digital Instrument Cluster'],
+    available: true
+  },
+  {
+    id: 'xrm-125-ds',
+    name: 'Honda XRM 125 DS',
+    category: 'Commuter',
+    price: 71900,
+    image: 'https://placehold.co/300x200/fd7e14/ffffff?text=XRM+125+DS',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '124.89cc',
+      power: '7.5 kW @ 7,500 rpm',
+      torque: '10.3 Nm @ 6,000 rpm',
+      transmission: 'Rotary 4-Speed',
+      fuelCapacity: '5.4 L',
+      weight: '108 kg',
+      seatHeight: '784 mm'
+    },
+    colors: [
+      { name: 'Candy Energy Orange', code: '#fd7e14', image: 'https://placehold.co/300x200/fd7e14/ffffff?text=XRM+125+DS+Energy+Orange' },
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: 'https://placehold.co/300x200/ffc107/000000?text=XRM+125+DS+Sports+Yellow' },
+      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: 'https://placehold.co/300x200/6c757d/ffffff?text=XRM+125+DS+Axis+Gray' }
+    ],
+    features: ['Dual Sport Design', 'Enhanced eSP Engine', 'PGM-Fi Technology', 'Front Disc Brake'],
+    available: true
+  },
+  {
+    id: 'xrm-125-dsx',
+    name: 'Honda XRM 125 DSX',
+    category: 'Commuter',
+    price: 75400,
+    image: 'https://placehold.co/300x200/fd7e14/ffffff?text=XRM+125+DSX',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '124.89cc',
+      power: '7.5 kW @ 7,500 rpm',
+      torque: '10.3 Nm @ 6,000 rpm',
+      transmission: 'Rotary 4-Speed',
+      fuelCapacity: '5.4 L',
+      weight: '110 kg',
+      seatHeight: '784 mm'
+    },
+    colors: [
+      { name: 'Candy Energy Orange', code: '#fd7e14', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Matte Black Metallic', code: '#212529', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
+    ],
+    features: ['Premium DSX Package', 'Enhanced eSP Technology', 'Advanced PGM-Fi System', 'Premium Graphics Package'],
+    available: true
+  },
+  {
+    id: 'xrm-125-motard',
+    name: 'Honda XRM 125 Motard',
+    category: 'Commuter',
+    price: 76900,
+    image: 'https://placehold.co/300x200/fd7e14/ffffff?text=XRM+125+Motard',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '124.89cc',
+      power: '7.5 kW @ 7,500 rpm',
+      torque: '10.3 Nm @ 6,000 rpm',
+      transmission: 'Rotary 4-Speed',
+      fuelCapacity: '5.4 L',
+      weight: '112 kg',
+      seatHeight: '790 mm'
+    },
+    colors: [
+      { name: 'Candy Energy Orange', code: '#fd7e14', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Matte Black Metallic', code: '#212529', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
+    ],
+    features: ['Motard Styling Package', 'Enhanced eSP Engine', 'Front & Rear Disc Brakes', 'Supermoto Design'],
+    available: true
+  },
+  {
+    id: 'rs-125',
+    name: 'Honda RS 125',
+    category: 'Commuter',
+    price: 75900,
+    image: 'https://placehold.co/300x200/fd7e14/ffffff?text=RS+125',
+    specs: {
+      engine: '4-Stroke, Air-Cooled, SOHC, eSP',
+      displacement: '124.89cc',
+      power: '7.5 kW @ 7,500 rpm',
+      torque: '10.3 Nm @ 6,000 rpm',
+      transmission: 'Rotary 4-Speed',
+      fuelCapacity: '5.0 L',
+      weight: '105 kg',
+      seatHeight: '775 mm'
+    },
+    colors: [
+      { name: 'Candy Energy Orange', code: '#fd7e14', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Pearl Sports Yellow', code: '#ffc107', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Matte Axis Gray Metallic', code: '#6c757d', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
+    ],
+    features: ['Racing-Inspired Design', 'Enhanced eSP Technology', 'PGM-Fi System', 'Front Disc Brake'],
+    available: true
+  },
+
+  // BUSINESS MOTORCYCLES - Honda Philippines Official Data
+  {
+    id: 'tmx125-alpha',
+    name: 'Honda TMX125 Alpha',
+    category: 'Business',
+    price: 56900,
+    image: 'https://placehold.co/300x200/212529/ffffff?text=TMX125+Alpha',
+    specs: {
+      engine: '4-Stroke, Over Head Valve (OHV)',
+      displacement: '125cc',
+      power: '8.5 HP @ 7,500 rpm',
+      torque: '9.5 Nm @ 6,000 rpm',
+      transmission: '5-Speed Manual',
+      fuelCapacity: '8.6L',
+      weight: '113kg',
+      seatHeight: '759mm'
+    },
+    colors: [
+      { name: 'Black', code: '#212529', image: 'https://placehold.co/300x200/212529/ffffff?text=TMX125+Alpha+Black' },
+      { name: 'Red', code: '#DC3545', image: 'https://placehold.co/300x200/DC3545/ffffff?text=TMX125+Alpha+Red' }
+    ],
+    features: ['Café Racer Inspired Design', 'Automatic Headlight On', 'Electric & Kick Start', 'Fuel Efficient 62.5km/L'],
+    available: true
+  },
+  {
+    id: 'tmx-supremo',
+    name: 'Honda TMX Supremo',
+    category: 'Business',
+    price: 78900,
+    image: 'https://placehold.co/300x200/DC3545/ffffff?text=TMX+Supremo',
+    specs: {
+      engine: '4-Stroke, SOHC, Air-Cooled',
+      displacement: '149cc',
+      power: '12 HP @ 8,000 rpm',
+      torque: '12 Nm @ 6,500 rpm',
+      transmission: '5-Speed Manual',
+      fuelCapacity: '10.3L',
+      weight: '127kg',
+      seatHeight: '782mm'
+    },
+    colors: [
+      { name: 'Black', code: '#212529', image: 'https://placehold.co/300x200/212529/ffffff?text=TMX+Supremo+Black' },
+      { name: 'Candy Ruby Red', code: '#DC3545', image: 'https://placehold.co/300x200/DC3545/ffffff?text=TMX+Supremo+Ruby+Red' }
+    ],
+    features: ['Passing Light', 'Informative Meter Panel', 'Electric & Kick Starter', 'Easy Choke Control'],
+    available: true
+  },
+
+  // LEGACY MODELS - Updated Pricing
+  {
+    id: 'cbr150r',
+    name: 'Honda CBR150R',
+    category: 'Sport',
+    price: 140000,
+    image: 'https://placehold.co/300x200/DC143C/ffffff?text=CBR150R',
+    specs: {
+      engine: '4-Stroke, Single Cylinder, DOHC',
+      displacement: '149.16cc',
+      power: '17.1 HP @ 9,000 rpm',
+      torque: '14.4 Nm @ 7,000 rpm',
+      transmission: '6-Speed Manual',
+      fuelCapacity: '12 L',
+      weight: '137 kg',
+      seatHeight: '790 mm'
+    },
+    colors: [
+      { name: 'Racing Red', code: '#DC143C', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Victory Black Red', code: '#000000', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'White', code: '#FFFFFF', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
+    ],
+    features: ['Liquid Cooled Engine', 'Full Digital Meter', 'LED Headlight', 'ABS'],
+    available: true
+  },
+  {
+    id: 'adv160',
+    name: 'Honda ADV 160',
+    category: 'Adventure',
+    price: 135000,
+    image: 'https://placehold.co/300x200/424242/ffffff?text=ADV+160',
+    specs: {
+      engine: '4-Stroke, Single Cylinder, SOHC',
+      displacement: '156.9cc',
+      power: '15.8 HP @ 8,500 rpm',
+      torque: '15 Nm @ 6,500 rpm',
+      transmission: 'Automatic CVT',
+      fuelCapacity: '8.1 L',
+      weight: '134 kg',
+      seatHeight: '795 mm'
+    },
+    colors: [
+      { name: 'Matte Axis Gray Metallic', code: '#424242', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Candy Energy Orange', code: '#FF6B35', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
+    ],
+    features: ['Smart Key System', 'All LED Lighting', 'USB Charging Port', 'Large Ground Clearance'],
+    available: true
+  },
+  {
+    id: 'pcx160',
+    name: 'Honda PCX 160',
+    category: 'Scooter',
+    price: 130000,
+    image: 'https://placehold.co/300x200/FF6B35/ffffff?text=PCX+160',
+    specs: {
+      engine: '4-Stroke, Single Cylinder, SOHC',
+      displacement: '156.9cc',
+      power: '15.8 HP @ 8,500 rpm',
+      torque: '15 Nm @ 6,500 rpm',
+      transmission: 'Automatic CVT',
+      fuelCapacity: '8.1 L',
+      weight: '132 kg',
+      seatHeight: '764 mm'
+    },
+    colors: [
+      { name: 'Candy Energy Orange', code: '#FF6B35', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' },
+      { name: 'Matte Axis Gray Metallic', code: '#424242', image: 'https://placehold.co/300x200/ff6b35/ffffff?text=Honda+Color' }
+    ],
+    features: ['Smart Key System', 'All LED Lighting', 'USB Charging Port', 'Digital Instrument Panel'],
+    available: true
+  }
+];

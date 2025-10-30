@@ -282,9 +282,6 @@ export default function Home() {
     return selectedCategory === 'All' 
       ? motorcycles 
       : motorcycles.filter(motorcycle => {
-          if (selectedCategory === 'Underbone') {
-            return motorcycle.category === 'Commuter';
-          }
           return motorcycle.category === selectedCategory;
         });
   }, [selectedCategory]);
@@ -449,8 +446,8 @@ export default function Home() {
                   </button>
                   <button
                     type="button"
-                    className={`btn px-4 py-3 fw-semibold rounded-modern ${selectedCategory === 'Scooter' ? 'bg-honda-gradient text-white' : 'btn-outline-secondary'}`}
-                    onClick={() => handleCategoryFilter('Scooter')}
+                    className={`btn px-4 py-3 fw-semibold rounded-modern ${selectedCategory === 'Scooters' ? 'bg-honda-gradient text-white' : 'btn-outline-secondary'}`}
+                    onClick={() => handleCategoryFilter('Scooters')}
                   >
                     <span className="d-block">🛵</span>
                     <span className="small">Scooters</span>
@@ -466,19 +463,11 @@ export default function Home() {
                   </button>
                   <button
                     type="button"
-                    className={`btn px-4 py-3 fw-semibold rounded-modern ${selectedCategory === 'Sport' ? 'bg-honda-gradient text-white' : 'btn-outline-secondary'}`}
-                    onClick={() => handleCategoryFilter('Sport')}
+                    className={`btn px-4 py-3 fw-semibold rounded-modern ${selectedCategory === 'Business' ? 'bg-honda-gradient text-white' : 'btn-outline-secondary'}`}
+                    onClick={() => handleCategoryFilter('Business')}
                   >
-                    <span className="d-block">🏁</span>
-                    <span className="small">Sport</span>
-                  </button>
-                  <button
-                    type="button"
-                    className={`btn px-4 py-3 fw-semibold rounded-modern ${selectedCategory === 'Adventure' ? 'bg-honda-gradient text-white' : 'btn-outline-secondary'}`}
-                    onClick={() => handleCategoryFilter('Adventure')}
-                  >
-                    <span className="d-block">🌄</span>
-                    <span className="small">Adventure</span>
+                    <span className="d-block">💼</span>
+                    <span className="small">Business</span>
                   </button>
                 </div>
               </div>
@@ -495,7 +484,7 @@ export default function Home() {
                 <span>of <strong>{motorcycles.length}</strong> motorcycles available</span>
                 {selectedCategory !== 'All' && (
                   <span className="ms-2">
-                    <span className="badge bg-secondary">{selectedCategory === 'Underbone' ? 'Underbone' : selectedCategory}</span>
+                    <span className="badge bg-secondary">{selectedCategory}</span>
                   </span>
                 )}
               </p>
