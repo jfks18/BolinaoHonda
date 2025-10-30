@@ -226,7 +226,7 @@ const MotorcycleCard = memo(({
               )}
             </button>
             <div className="row g-2">
-              <div className="col-6">
+              <div className="col">
                 <button  className="btn btn-outline-success w-100 rounded-modern small">
                   <a href="https://m.me/motorcentrumbolinao.guanzon">
                          <span className="d-block">💬</span>
@@ -443,28 +443,35 @@ export default function Home() {
                   </button>
                   <button
                     type="button"
-                    className={`btn px-4 py-3 fw-semibold rounded-modern ${selectedCategory === 'Scooters' ? 'bg-honda-gradient text-white' : 'btn-outline-secondary'}`}
-                    onClick={() => handleCategoryFilter('Scooters')}
+                    className={`btn px-4 py-3 fw-semibold rounded-modern ${selectedCategory === 'Scooter' ? 'bg-honda-gradient text-white' : 'btn-outline-secondary'}`}
+                    onClick={() => handleCategoryFilter('Scooter')}
                   >
                     <span className="d-block">🛵</span>
                     <span className="small">Scooters</span>
                   </button>
                   <button
                     type="button"
-                    className={`btn px-4 py-3 fw-semibold rounded-modern ${selectedCategory === 'Underbone' ? 'bg-honda-gradient text-white' : 'btn-outline-secondary'}
-                    `}
-                    onClick={() => handleCategoryFilter('Underbone')}
+                    className={`btn px-4 py-3 fw-semibold rounded-modern ${selectedCategory === 'Sport' ? 'bg-honda-gradient text-white' : 'btn-outline-secondary'}`}
+                    onClick={() => handleCategoryFilter('Sport')}
                   >
-                    <span className="d-block">🏍️</span>
-                    <span className="small">Underbone</span>
+                    <span className="d-block">🏁</span>
+                    <span className="small">Sport</span>
                   </button>
                   <button
                     type="button"
-                    className={`btn px-4 py-3 fw-semibold rounded-modern ${selectedCategory === 'Business' ? 'bg-honda-gradient text-white' : 'btn-outline-secondary'}`}
-                    onClick={() => handleCategoryFilter('Business')}
+                    className={`btn px-4 py-3 fw-semibold rounded-modern ${selectedCategory === 'Adventure' ? 'bg-honda-gradient text-white' : 'btn-outline-secondary'}`}
+                    onClick={() => handleCategoryFilter('Adventure')}
                   >
-                    <span className="d-block">💼</span>
-                    <span className="small">Business</span>
+                    <span className="d-block">�</span>
+                    <span className="small">Adventure</span>
+                  </button>
+                  <button
+                    type="button"
+                    className={`btn px-4 py-3 fw-semibold rounded-modern ${selectedCategory === 'Commuter' ? 'bg-honda-gradient text-white' : 'btn-outline-secondary'}`}
+                    onClick={() => handleCategoryFilter('Commuter')}
+                  >
+                    <span className="d-block">🏙️</span>
+                    <span className="small">Commuter</span>
                   </button>
                 </div>
               </div>

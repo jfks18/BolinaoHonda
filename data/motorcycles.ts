@@ -172,7 +172,7 @@ export const motorcycles: Motorcycle[] = [
     id: '7',
     name: 'Honda Click 125 SE',
     category: 'Scooter',
-    price: 78000,
+    price: 84900,
   image: 'https://placehold.co/300x200/FF6B35/ffffff?text=Click+125+SE',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
@@ -185,9 +185,9 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '776 mm'
     },
     colors: [
-      { name: 'Candy Energy Orange', code: '#FF6B35', image: '/images/click125se-orange.jpg' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: '/images/click125se-white.jpg' },
-      { name: 'Matte Axis Gray Metallic', code: '#424242', image: '/images/click125se-gray.jpg' }
+      { name: 'Obsidian Black Metallic', code: '#000000', image: '/images/click125se-orange.jpg' },
+      { name: 'Pearl Arctic White', code: '#ffffff', image: '/images/click125se-white.jpg' },
+      { name: 'Pearl Crimson Red', code: '#a90000', image: '/images/click125se-gray.jpg' }
     ],
     features: ['eSP Engine', 'LED Headlight', 'Digital Instrument Panel', 'Under Seat Storage', 'Special Edition Design'],
     available: true
@@ -196,7 +196,7 @@ export const motorcycles: Motorcycle[] = [
     id: '8',
     name: 'Honda Click 125 Standard',
     category: 'Scooter',
-    price: 72000,
+    price: 81900,
   image: 'https://placehold.co/300x200/1E88E5/ffffff?text=Click+125+Standard',
     specs: {
       engine: '4-Stroke, Single Cylinder, SOHC',
@@ -209,9 +209,10 @@ export const motorcycles: Motorcycle[] = [
       seatHeight: '776 mm'
     },
     colors: [
-      { name: 'Candy Tahitian Blue', code: '#1E88E5', image: '/images/click125std-blue.jpg' },
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: '/images/click125std-white.jpg' },
-      { name: 'Black', code: '#000000', image: '/images/click125std-black.jpg' }
+      { name: 'Pearl Arctic White', code: '#ffffff', image: '/images/click125std-blue.jpg' },
+      { name: 'Pearl Crimson Red', code: '#a90000', image: '/images/click125std-white.jpg' },
+      { name: 'Pearl Sylvestric Gray', code: '#8b8d91', image: '/images/click125std-black.jpg' },
+      { name: 'Stellar Blue Metallic', code: '#02346c', image: '/images/click125std-black.jpg' }
     ],
     features: ['eSP Engine', 'LED Headlight', 'Analog Speedometer', 'Under Seat Storage'],
     available: true
