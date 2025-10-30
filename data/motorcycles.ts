@@ -221,22 +221,22 @@ export const motorcycles: Motorcycle[] = [
     id: '9',
     name: 'Honda Beat Premium',
     category: 'Scooter',
-    price: 65000,
+    price: 74900,
   image: 'https://placehold.co/300x200/FFFFFF/000000?text=Beat+Premium',
     specs: {
-      engine: '4-Stroke, Single Cylinder, SOHC',
-      displacement: '109.51cc',
-      power: '8.8 HP @ 7,500 rpm',
-      torque: '9.0 Nm @ 5,500 rpm',
-      transmission: 'Automatic CVT',
+      engine: '4-Stroke, SOHC, Air-Cooled, eSP',
+      displacement: '110cc',
+      power: '6.63 kW @ 7,500 rpm',
+      torque: '9.30 Nm @ 6,000 rpm',
+      transmission: 'Automatic (V-Matic)',
       fuelCapacity: '4.2 L',
       weight: '89 kg',
-      seatHeight: '740 mm'
+      seatHeight: '742 mm'
     },
     colors: [
-      { name: 'Pearl Jasmine White', code: '#FFFFFF', image: '/images/beat-premium-white.jpg' },
-      { name: 'Candy Energy Orange', code: '#FF6B35', image: '/images/beat-premium-orange.jpg' },
-      { name: 'Matte Axis Gray Metallic', code: '#424242', image: '/images/beat-premium-gray.jpg' }
+      { name: 'Mat Axis Gray Metallic', code: '#FFFFFF', image: '/images/beat-premium-white.jpg' },
+      { name: 'Pearl Arctic White', code: '#646464', image: '/images/beat-premium-orange.jpg' },
+      { name: 'Matte Axis Gray Metallic', code: '#ffffff', image: '/images/beat-premium-gray.jpg' }
     ],
     features: ['eSP Engine', 'LED Headlight', 'Digital Speedometer', 'Premium Design', 'Combi Brake System'],
     available: true
