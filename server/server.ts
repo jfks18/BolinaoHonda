@@ -5,8 +5,9 @@ import { apiRoutes } from './routes/api';
 import { errorHandler } from './middleware/errorHandler';
 import { testConnection, initializeDatabase } from './config/database';
 
-// Load environment variables
+// Load environment variables - support both .env.local (dev) and .env (production)
 dotenv.config({ path: '.env.local' });
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -28,7 +29,8 @@ app.get('/health', (req, res) => {
   res.status(200).json({ 
     status: 'OK', 
     message: 'Honda Bolinao Server is running',
-    timestamp: new Date().toISOString()
+    timestamp: new Date().toISOString(),
+    environment: process.env.NODE_ENV || 'development'
   });
 });
 
@@ -45,6 +47,7 @@ app.use('*', (req, res) => {
 
 app.listen(PORT, async () => {
   console.log(`🚗 Honda Bolinao Server running on port ${PORT}`);
+  console.log(`🌐 Environment: ${process.env.NODE_ENV || 'development'}`);
   console.log(`🌐 CORS enabled for: ${process.env.CLIENT_URL || 'http://localhost:3000'}`);
   
   // Test database connection and initialize tables
